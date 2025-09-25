@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synck Health</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg border-bottom border-body">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <!-- Navbar -->
+                    <img src="./assets/logo/logo2.png" alt="Synck health" style="height: 35px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <div class="grid grid-cols-4 gap-6 p-8">
+                                    <div class="col-span-3 grid grid-cols-3 gap-6">
+                                        <div>
+                                            <h3 class="font-semibold text-gray-800 mb-3 text-sm">Medical Services</h3>
+                                            <ul class="space-y-2">
+                                                <li><a href="#" onclick="showServiceDetail('primary-care')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Primary
+                                                        Care</a></li>
+                                                <li><a href="#" onclick="showServiceDetail('cardiology')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Cardiology</a>
+                                                </li>
+                                                <li><a href="#" onclick="showServiceDetail('neurology')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Neurology</a>
+                                                </li>
+                                                <li><a href="#" onclick="showServiceDetail('orthopedics')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Orthopedics</a>
+                                                </li>
+                                                <li><a href="#" onclick="showServiceDetail('dermatology')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Dermatology</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-gray-800 mb-3 text-sm">Wellness Programs</h3>
+                                            <ul class="space-y-2">
+                                                <li><a href="#" onclick="showServiceDetail('fitness')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Fitness
+                                                        & Nutrition</a></li>
+                                                <li><a href="#" onclick="showServiceDetail('mental-health')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Mental
+                                                        Health</a></li>
+                                                <li><a href="#" onclick="showServiceDetail('stress-management')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Stress
+                                                        Management</a></li>
+                                                <li><a href="#" onclick="showServiceDetail('sleep-therapy')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Sleep
+                                                        Therapy</a></li>
+                                                <li><a href="#" onclick="showServiceDetail('preventive-care')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Preventive
+                                                        Care</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-gray-800 mb-3 text-sm">Specialized Care</h3>
+                                            <ul class="space-y-2">
+                                                <li><a href="#" onclick="showServiceDetail('pediatrics')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Pediatrics</a>
+                                                </li>
+                                                <li><a href="#" onclick="showServiceDetail('geriatrics')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Geriatrics</a>
+                                                </li>
+                                                <li><a href="#" onclick="showServiceDetail('womens-health')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Women's
+                                                        Health</a></li>
+                                                <li><a href="#" onclick="showServiceDetail('mens-health')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Men's
+                                                        Health</a></li>
+                                                <li><a href="#" onclick="showServiceDetail('emergency-care')"
+                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Emergency
+                                                        Care</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg">
+                                        <h4 class="font-semibold text-gray-800 mb-3 text-sm">Featured Service</h4>
+                                        <img src="https://picsum.photos/seed/featured-service/280/160.jpg"
+                                            alt="Featured" class="rounded-lg mb-3 w-full">
+                                        <p class="text-xs text-black mb-3">Advanced Cardiac Care with state-of-the-art
+                                            technology</p>
+                                        <button onclick="showServiceDetail('cardiology')"
+                                            class="text-xs bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                            Learn More
+                                        </button>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex gap-2" role="search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="container">
+
+        <div class="row my-5 herosection">
+            <div class="col-12 col-md-6 m-auto">
+                <h1>
+                    Protect employees from unexpected healthcare expenses
+                </h1>
+
+                <p class="pt-3">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae incidunt doloribus vitae nostrum quia
+                    officiis ut in dolores. Saepe voluptatibus vero alias repellendus. Aperiam, laudantium.
+                </p>
+                <div class="pt-2 d-flex gap-3">
+                    <button class="btn primary-button btn-sm" type="submit">Button</button>
+                    <button class="btn btn-primary btn-sm" type="submit">Button</button>
+
+                </div>
+            </div>
+
+            <div class="heroimg col-12 col-md-6 text-end">
+                <img src="./assets/image/hero4.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="logo-slider-wrapper">
+            <div class="logo-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <a href="" class="swiper-slide">
+                        asasdhi
+                    </a>
+
+                    <a href="" class="swiper-slide">
+                        asasdhi
+                    </a>
+
+                    <a href="#" class="swiper-slide">
+                        asasdhi
+                    </a>
+
+                    <a href="#" class="swiper-slide">
+                        asasdhi
+                    </a>
+
+                    <a href="#" class="swiper-slide">
+                        asasdhi
+                    </a>
+
+                    <a href="#5" class="swiper-slide">
+                        asasdhi
+                    </a>
+
+                    <a href="" class="swiper-slide">
+                        asasdhi
+                    </a>
+
+                    <a href="" class="swiper-slide">
+                        asasdhi
+                    </a>
+
+
+
+                    <a href="" class="swiper-slide">
+                        asasdhi
+                    </a>
+
+                    <a href="" class="swiper-slide">
+                        asasdhi
+                    </a </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- video consulation -->
+    <section class="container">
+        <h1 class="text-center my-4">Your Employeed are hurting</h1>
+        <div class="row gap-4">
+            <div class="col-12 col-md-6">
+                <div class="row section1">
+                    <img class="col-6" src="./assets/image/section1a.png" alt="">
+                    <div class="col-6 m-auto">
+                        <h2 class="text-center">50%</h2>
+                        <p>
+                            of employees defer care due to cost
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-5">
+                <div class=" row gap-4" style="height: 100%;">
+                    <div class="section1a row">
+                        <h2 class="col-3 m-auto">67%</h2>
+                        <div class="col-9">
+                            <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quaerat
+                                asperiores magnam,
+                                rerum fugit expedita?</p>
+                        </div>
+                    </div>
+                    <div class="section1a row ">
+                        <h2 class="col-3 m-auto">67%</h2>
+                        <div class="col-9">
+                            <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quaerat
+                                asperiores magnam,
+                                rerum fugit expedita?</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="container my-5">
+        <h2 class="text-center mt-5 my-2">
+            Services
+        </h2>
+
+        <div class="box-container">
+            <div class="fixedop">
+
+                <div class="d-flex">
+                    <div style="background-color: white; width: 100%; padding: 10px;">
+                        <div class="card">
+                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
+
+                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="..." style="width: 100%;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the
+                                    card’s content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="asdasd"></div>
+
+                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <div class="box-container">
+            <div class="asdasd"></div>
+            <div class="fixedop" style="background-color: blue;">
+
+                <div class="d-flex gap-2">
+                    <div style="background-color: white; width: 100%; padding: 10px;">
+                        <div class="card">
+                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
+
+                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="..." style="width: 100%;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the
+                                    card’s content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
+
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
+
+                    </div>
+
+                    <div style="background-color: white; width: 100%; padding: 10px;">
+                        <div class="card">
+                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
+
+                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="..." style="width: 100%;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the
+                                    card’s content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex gap-2">
+                    <div style="background-color: white; width: 100%; padding: 10px;">
+                        <div class="card">
+                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
+
+                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="..." style="width: 100%;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the
+                                    card’s content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
+
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
+
+                    </div>
+
+                    <div style="background-color: white; width: 100%; padding: 10px;">
+                        <div class="card">
+                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
+
+                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="..." style="width: 100%;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the
+                                    card’s content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+    </section>
+
+
+
+
+    <!-- hero section -->
+    <section class="container">
+
+        <div class="row my-5 herosection">
+            <div class="col-12 col-md-6 m-auto">
+                <h2>
+                    Protect employees from unexpected healthcare expenses
+                </h2>
+
+                <p class="pt-3">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae incidunt doloribus vitae nostrum quia
+                    officiis ut in dolores. Saepe voluptatibus vero alias repellendus. Aperiam, laudantium.
+                </p>
+                <div class="pt-2 d-flex gap-3">
+                    <button class="btn primary-button btn-sm" type="submit">Button</button>
+                    <button class="btn btn-primary btn-sm" type="submit">Button</button>
+
+                </div>
+            </div>
+
+            <div class="heroimg col-12 col-md-6 text-end">
+                <img src="./assets/image/hero.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="container mt-5">
+        <div class="d-flex gap-2">
+            <div class="section2 ">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt odit dolorum sapiente
+                    consequuntur, quas laudantium ipsum quis laboriosam reiciendis?
+                </p>
+                <div>
+                    <div>
+                        <h4>Name ot the presion</h4>
+                        <p>cell no</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section2a">
+                <img src="./assets/profile/christopher-campbell-rDEOVtE7vOs-unsplash-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.logo-slider', {
+            loop: true,
+            speed: 7000,
+            slidesPerView: 5,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            freeMode: true,
+            freeModeMomentum: false,
+
+            // breakpoints: {
+            //     960: {
+            //         slidesPerView: 5,
+            //         spaceBetween: 30
+            //     },
+            //     720: {
+            //         slidesPerView: 4,
+            //         spaceBetween: 30
+            //     },
+            //     540: {
+            //         slidesPerView: 2,
+            //         spaceBetween: 4
+            //     },
+            //     320: {
+            //         slidesPerView: 2,
+            //         spaceBetween: 2
+            //     },
+            // }
+        });
+    </script>
+</body>
+
+</html>
