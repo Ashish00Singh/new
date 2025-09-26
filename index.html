@@ -7,139 +7,25 @@
     <title>Synck Health</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./style.css">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
 
-    <!-- <header>
-        <nav class="navbar navbar-expand-lg border-bottom border-body">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    
-                    <img src="./assets/logo/logo2.png" alt="Synck health" style="height: 35px;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <div class="grid grid-cols-4 gap-6 p-8">
-                                    <div class="col-span-3 grid grid-cols-3 gap-6">
-                                        <div>
-                                            <h3 class="font-semibold text-gray-800 mb-3 text-sm">Medical Services</h3>
-                                            <ul class="space-y-2">
-                                                <li><a href="#" onclick="showServiceDetail('primary-care')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Primary
-                                                        Care</a></li>
-                                                <li><a href="#" onclick="showServiceDetail('cardiology')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Cardiology</a>
-                                                </li>
-                                                <li><a href="#" onclick="showServiceDetail('neurology')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Neurology</a>
-                                                </li>
-                                                <li><a href="#" onclick="showServiceDetail('orthopedics')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Orthopedics</a>
-                                                </li>
-                                                <li><a href="#" onclick="showServiceDetail('dermatology')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Dermatology</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3 class="font-semibold text-gray-800 mb-3 text-sm">Wellness Programs</h3>
-                                            <ul class="space-y-2">
-                                                <li><a href="#" onclick="showServiceDetail('fitness')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Fitness
-                                                        & Nutrition</a></li>
-                                                <li><a href="#" onclick="showServiceDetail('mental-health')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Mental
-                                                        Health</a></li>
-                                                <li><a href="#" onclick="showServiceDetail('stress-management')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Stress
-                                                        Management</a></li>
-                                                <li><a href="#" onclick="showServiceDetail('sleep-therapy')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Sleep
-                                                        Therapy</a></li>
-                                                <li><a href="#" onclick="showServiceDetail('preventive-care')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Preventive
-                                                        Care</a></li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h3 class="font-semibold text-gray-800 mb-3 text-sm">Specialized Care</h3>
-                                            <ul class="space-y-2">
-                                                <li><a href="#" onclick="showServiceDetail('pediatrics')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Pediatrics</a>
-                                                </li>
-                                                <li><a href="#" onclick="showServiceDetail('geriatrics')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Geriatrics</a>
-                                                </li>
-                                                <li><a href="#" onclick="showServiceDetail('womens-health')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Women's
-                                                        Health</a></li>
-                                                <li><a href="#" onclick="showServiceDetail('mens-health')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Men's
-                                                        Health</a></li>
-                                                <li><a href="#" onclick="showServiceDetail('emergency-care')"
-                                                        class="text-black hover:text-blue-600 text-xs transition-colors">Emergency
-                                                        Care</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="bg-gray-50 rounded-lg">
-                                        <h4 class="font-semibold text-gray-800 mb-3 text-sm">Featured Service</h4>
-                                        <img src="https://picsum.photos/seed/featured-service/280/160.jpg"
-                                            alt="Featured" class="rounded-lg mb-3 w-full">
-                                        <p class="text-xs text-black mb-3">Advanced Cardiac Care with state-of-the-art
-                                            technology</p>
-                                        <button onclick="showServiceDetail('cardiology')"
-                                            class="text-xs bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                                            Learn More
-                                        </button>
-                                    </div>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex gap-2" role="search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header> -->
 
-
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./assets/logo/logo2.png" alt="Synck health" style="height: 35px;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -148,52 +34,54 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item mega-menu">
-                        <a class="nav-link dropdown-toggle" href="#" id="healthServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Health Services
+                        <a class="nav-link dropdown-toggle " href="#" id="healthServicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Individual Wellness
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="healthServicesDropdown">
-                            <div class="container">
+                        <div class="dropdown-menu m-auto " aria-labelledby="healthServicesDropdown">
+                            <div class="container bas">
                                 <div class="row">
                                     <div class="col-lg-3 mega-menu-column">
-                                        <h5>Primary Care</h5>
-                                        <ul>
-                                            <li><a href="#"><i class="bi bi-person-check"></i> General Checkups</a></li>
-                                            <li><a href="#"><i class="bi bi-activity"></i> Preventive Care</a></li>
-                                            <li><a href="#"><i class="bi bi-capsule"></i> Vaccinations</a></li>
-                                            <li><a href="#"><i class="bi bi-heart"></i> Chronic Disease Management</a></li>
-                                            <li><a href="#"><i class="bi bi-calendar-check"></i> Annual Physicals</a></li>
+                                        <h5 class="magamenutitle">Primary Care</h5>
+                                        <ul style="margin-bottom:0">
+                                            <li><a href="#">Fitness Programs</a></li>
+                                            <li><a href="#">Nutrition Counseling</a></li>
+                                            <li><a href="#">Mental Health Support</a></li>
+                                            <li><a href="#">Telehealth Services</a></li>
+                                            <li><a href="#">Preventive Care</a></li>
+                                            <li><a href="#">Senior Wellness</a></li>
+                                            <li><a href="#">Health Calculator</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 mega-menu-column">
-                                        <h5>Specialty Services</h5>
-                                        <ul>
-                                            <li><a href="#"><i class="bi bi-clipboard-pulse"></i> Cardiology</a></li>
-                                            <li><a href="#"><i class="bi bi-eye"></i> Ophthalmology</a></li>
-                                            <li><a href="#"><i class="bi bi-bone"></i> Orthopedics</a></li>
-                                            <li><a href="#"><i class="bi bi-lungs"></i> Pulmonology</a></li>
-                                            <li><a href="#"><i class="bi bi-brain"></i> Neurology</a></li>
+                                        <h5 class="magamenutitle">Specialty Services</h5>
+                                        <ul style="margin-bottom:0">
+                                            <li><a href="#">Wellness Plans</a></li>
+                                            <li><a href="#">Mental Health Support</a></li>
+                                            <li><a href="#">Preventive Care</a></li>
+                                            <li><a href="#">Member Portal</a></li>
+                                            <li><a href="#">Fitness Programs</a></li>
+                                            <li><a href="#">Nutrition Counseling</a></li>
+                                            <li><a href="#">Stress Management</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 mega-menu-column">
-                                        <h5>Emergency Care</h5>
-                                        <ul>
-                                            <li><a href="#"><i class="bi bi-ambulance"></i> 24/7 Emergency</a></li>
-                                            <li><a href="#"><i class="bi bi-bandaid"></i> Urgent Care</a></li>
-                                            <li><a href="#"><i class="bi bi-shield-exclamation"></i> Trauma Center</a></li>
-                                            <li><a href="#"><i class="bi bi-hospital"></i> Critical Care</a></li>
-                                            <li><a href="#"><i class="bi bi-truck"></i> Medical Transport</a></li>
+                                        <h5 class="magamenutitle">Emergency Care</h5>
+                                        <ul style="margin-bottom:0">
+                                            <li><a href="#">Employee Wellness Programs</a></li>
+                                            <li><a href="#">Financial & Occupational Wellness</a></li>
+                                            <li><a href="#">Corporate Fitness Solutions</a></li>
+                                            <li><a href="#">EAP & Mental Wellness</a></li>
+                                            <li><a href="#">Mental Health at Work</a></li>
+                                            <li><a href="#">Wellness Workshops</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 mega-menu-column">
                                         <div class="promo-banner">
                                             <h5>New Patient Special</h5>
                                             <p>Get 20% off your first visit when you book online!</p>
-                                            <button class="btn">Book Appointment</button>
+                                            <button class="btn" style="font-size: 12px;">Book Appointment</button>
                                         </div>
-                                        <!-- <div class="service-card mt-4">
-                                            <h6>Telemedicine</h6>
-                                            <p>Virtual consultations with our specialists from the comfort of your home.</p>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -216,19 +104,6 @@
             </div>
         </div>
     </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- hero section -->
@@ -258,12 +133,197 @@
 
     </section>
 
-    <section>
+
+
+
+    <!-- showing the program -->
+
+    <!-- <section>
+        <div class="container">
+            <div class="row">
+                <div class=" col m-auto">
+                    <h2>Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help your business grow.</h2>
+                    <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+                        experience, and overall efficiency.</p>
+                    <div class="row mt-5">
+                        <div class="col  text-center">
+                            <h4>10K+</h4>
+                            <p>COMPANIES</p>
+                        </div>
+                        <div class="col  text-center">
+                            <h4>314</h4>
+                            <p>TEMPLATES</p>
+                        </div>
+                        <div class="col text-center">
+                            <h4>12M+</h4>
+                            <p>QUERIES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./assets/image/hero1.png" alt="" style="width: 100%; max-width: 450px;">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="container py-5">
+
+        <div class="bas">
+            <h2 class="text-center py-4 fs-1" style="background-color: rgba(255, 255, 255, 0.692);">
+                Health Beyond Limits
+            </h2>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class=" col m-auto">
+                                <h2>Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help your business
+                                    grow.</h2>
+                                <p>Discover the benefits of data analytics and make better decisions regarding revenue,
+                                    customer
+                                    experience, and overall efficiency.</p>
+                                <div class="row mt-5">
+                                    <div class="col  text-center">
+                                        <h4>10K+</h4>
+                                        <p>COMPANIES</p>
+                                    </div>
+                                    <div class="col  text-center">
+                                        <h4>314</h4>
+                                        <p>TEMPLATES</p>
+                                    </div>
+                                    <div class="col text-center">
+                                        <h4>12M+</h4>
+                                        <p>QUERIES</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="./assets/image/Design-Wellness-Program-How-To-Design-Employee-Programs-removebg-preview.png"
+                                    alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class=" col m-auto">
+                                <h2>Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help your business
+                                    grow.</h2>
+                                <p>Discover the benefits of data analytics and make better decisions regarding revenue,
+                                    customer
+                                    experience, and overall efficiency.</p>
+                                <div class="row mt-5">
+                                    <div class="col  text-center">
+                                        <h4>10K+</h4>
+                                        <p>COMPANIES</p>
+                                    </div>
+                                    <div class="col  text-center">
+                                        <h4>314</h4>
+                                        <p>TEMPLATES</p>
+                                    </div>
+                                    <div class="col text-center">
+                                        <h4>12M+</h4>
+                                        <p>QUERIES</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="./assets/image/hero1.png" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class=" col m-auto">
+                                <h2>Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help your business
+                                    grow.</h2>
+                                <p>Discover the benefits of data analytics and make better decisions regarding revenue,
+                                    customer
+                                    experience, and overall efficiency.</p>
+                                <div class="row mt-5">
+                                    <div class="col  text-center">
+                                        <h4>10K+</h4>
+                                        <p>COMPANIES</p>
+                                    </div>
+                                    <div class="col  text-center">
+                                        <h4>314</h4>
+                                        <p>TEMPLATES</p>
+                                    </div>
+                                    <div class="col text-center">
+                                        <h4>12M+</h4>
+                                        <p>QUERIES</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="./assets/image/hero1.png" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class=" col m-auto">
+                                <h2>Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help your business
+                                    grow.</h2>
+                                <p>Discover the benefits of data analytics and make better decisions regarding revenue,
+                                    customer
+                                    experience, and overall efficiency.</p>
+                                <div class="row mt-5">
+                                    <div class="col  text-center">
+                                        <h4>10K+</h4>
+                                        <p>COMPANIES</p>
+                                    </div>
+                                    <div class="col  text-center">
+                                        <h4>314</h4>
+                                        <p>TEMPLATES</p>
+                                    </div>
+                                    <div class="col text-center">
+                                        <h4>12M+</h4>
+                                        <p>QUERIES</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="./assets/image/hero1.png" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"> > </div>
+            <div class="swiper-button-prev">
+                < </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                    </div>
+            </div>
+    </section>
+
+
+
+    <!-- <section>
         <div class="logo-slider-wrapper">
             <div class="logo-slider">
-                <!-- Additional required wrapper -->
+               
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+                    
                     <a href="" class="swiper-slide">
                         asasdhi
                     </a>
@@ -308,11 +368,11 @@
                 </div>
             </div>
 
-    </section>
+    </section> -->
 
     <!-- video consulation -->
-    <section class="container">
-        <h1 class="text-center my-4">Your Employeed are hurting</h1>
+    <section class="container py-5">
+        <h2 class="text-center fs-1 my-4">Your Employeed are hurting</h2>
         <div class="row gap-4">
             <div class="col-12 col-md-6">
                 <div class="row section1">
@@ -351,199 +411,160 @@
     </section>
 
 
-    <section class="container my-5">
+    <!-- <section class="container my-5">
         <h2 class="text-center mt-5 my-2">
             Services
         </h2>
 
-        <div class="box-container">
-            <div class="fixedop">
+        <section class="card__container">
 
-                <div class="d-flex">
-                    <div style="background-color: white; width: 100%; padding: 10px;">
-                        <div class="card">
-                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
+    <div class="card__bx card__1">
+      <div class="card__data">
+        <div class="card__icon">
+          <div class="card__icon-bx">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+        </div>
+        <div class="card__content">
+          <h3>Design</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="card__bx card__2">
+      <div class="card__data">
+        <div class="card__icon">
+          <div class="card__icon-bx"><i class="fa-solid fa-code"></i></div>
+        </div>
+        <div class="card__content">
+          <h3>Development</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="card__bx card__3">
+      <div class="card__data">
+        <div class="card__icon">
+          <div class="card__icon-bx"><i class="fa-solid fa-rocket"></i></div>
+        </div>
+        <div class="card__content">
+          <h3>Lauch</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         
+        </div>
+      </div>
+    </div>
 
-                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="..." style="width: 100%;">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card’s content.</p>
+    <div class="card__bx card__3">
+      <div class="card__data">
+        <div class="card__icon">
+          <div class="card__icon-bx"><i class="fa-solid fa-rocket"></i></div>
+        </div>
+        <div class="card__content">
+          <h3>Lauch</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="card__bx card__3">
+      <div class="card__data">
+        <div class="card__icon">
+          <div class="card__icon-bx"><i class="fa-solid fa-rocket"></i></div>
+        </div>
+        <div class="card__content">
+          <h3>Lauch</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         
+        </div>
+      </div>
+    </div>
+     <div class="card__bx card__3">
+      <div class="card__data">
+        <div class="card__icon">
+          <div class="card__icon-bx"><i class="fa-solid fa-rocket"></i></div>
+        </div>
+        <div class="card__content">
+          <h3>Lauch</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          
+        </div>
+      </div>
+    </div>
+
+  </section>
+    </section> -->
+
+    <!-- services -->
+
+    <section class="awdawdasd py-5">
+        <div class="container">
+            <h2 class="py-3 fs-1 text-center">Services</h2>
+
+
+
+            <div class="row gap-3 position-relative" style="justify-content: center;">
+                <div class="row gap-4" style="justify-content: center;">
+                    <div class="col-12 col-md-5 serviserw">
+                        <div class="row cardservices">
+                            <img class="col-12 col-lg-4" src="./assets/image/service/service.png" alt="">
+                            <div class="col-12 col-lg-6 services-container py-3">
+                                <h3 class="text-center text-md-start ">A culture of helping their people</h3>
+                                <p class="text-center text-md-start ">People everywhere need help applying for care</p>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="asdasd"></div> -->
 
-                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
-
+                    <div class="col-12 col-md-5 serviserw">
+                        <div class="row cardservices">
+                            <img class="col-12 col-lg-4" src="./assets/image/service/service1.png" alt="">
+                            <div class="col-12 col-lg-6 services-container py-3">
+                                <h3 class="text-center text-md-start ">A culture of helping their people23</h3>
+                                <p class="text-center text-md-start ">People everywhere need help applying for care</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="d-flex">
-
-                     <div class="" style="width: 100%;  background-color: white; padding: 10px;">
-
-                    </div>
-
-                    <!-- <div class="asdasd"></div> -->
-
-                    <div style="background-color: white; width: 100%; padding: 10px;">
-                        <div class="card">
-                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
-
-                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="..." style="width: 100%;">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card’s content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                   
+                <div class="flotinglogo d-none d-md-flex">
+                    <img src="./assets/logo/iconlogo.png" alt="">
                 </div>
 
-                <div class="d-flex">
-                    <div style="background-color: white; width: 100%; padding: 10px;">
-                        <div class="card">
-                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
 
-                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="..." style="width: 100%;">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card’s content.</p>
+                <div class="row gap-4" style="justify-content: center;">
+                    <div class="col-12 col-md-5 serviserw">
+                        <div class="row cardservices">
+                            <img class="col-12 col-lg-4" src="./assets/image/service/service2.png" alt="">
+                            <div class="col-12 col-lg-6 services-container py-3">
+                                <h3 class="text-center text-md-start ">A culture of helping their people23</h3>
+                                <p class="text-center text-md-start ">People everywhere need help applying for care</p>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="asdasd"></div> -->
 
-                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
-
+                    <div class="col-12 col-md-5 serviserw">
+                        <div class="row cardservices">
+                            <img class="col-12 col-lg-4" src="./assets/image/service/service3.png" alt="">
+                            <div class="col-12 col-lg-6 services-container py-3">
+                                <h3 class="text-center text-md-start ">A culture of helping their people23</h3>
+                                <p class="text-center text-md-start ">People everywhere need help applying for care</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
 
 
-
-        <!-- <div class="box-container">
-            <div class="asdasd"></div>
-            <div class="fixedop" style="background-color: blue;">
-
-                <div class="d-flex gap-2">
-                    <div style="background-color: white; width: 100%; padding: 10px;">
-                        <div class="card">
-                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
-
-                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="..." style="width: 100%;">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card’s content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
-
-                    </div>
-                </div>
-
-                <div class="d-flex gap-2">
-                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
-
-                    </div>
-
-                    <div style="background-color: white; width: 100%; padding: 10px;">
-                        <div class="card">
-                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
-
-                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="..." style="width: 100%;">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card’s content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="d-flex gap-2">
-                    <div style="background-color: white; width: 100%; padding: 10px;">
-                        <div class="card">
-                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
-
-                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="..." style="width: 100%;">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card’s content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
-
-                    </div>
-                </div>
-
-                <div class="d-flex gap-2">
-                    <div class="" style="width: 100%;  background-color: white; padding: 10px;">
-
-                    </div>
-
-                    <div style="background-color: white; width: 100%; padding: 10px;">
-                        <div class="card">
-                            <div class="card-img-top" style=" height: 100px; overflow: hidden;">
-
-                                <img src="https://images.unsplash.com/vector-1757680009601-2d57c069fb55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="..." style="width: 100%;">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of
-                                    the
-                                    card’s content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div> -->
-
-
-
-
     </section>
+
+
+
 
 
 
@@ -623,53 +644,191 @@
 
 
 
+    <footer class="footer py-5">
+        <!-- <div class="health-wave"></div> -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section company-info">
+                    <div class="logo">Synck Health</div>
+                    <p>Making healthcare accessible and affordable for everyone. Our personalized approach focuses on
+                        you, not just your symptoms, for truly comprehensive care that adapts to your lifestyle.</p>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <span class="icon">🕐</span>
+                            <span>24/7 Support Available</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <span>8800-525-700</span>
+                        </div>
+
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">✉️</span>
+                        <span>care@synckhealth.com</span>
+                    </div>
+                    <div class="contact-item" style="margin-top:15px; margin-bottom:15px;">
+                        <span class="icon">📍</span>
+                        <span>336, Udyog Vihar Phase IV, Gurugram</span>
+                    </div>
+
+
+                    <!--</div>-->
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="#" title="Instagram">ig</a>
+                    </div>
+                </div>
+
+                <div class="footer-section" style="
+                display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+">
+                    <h3 style="text-align:center">Wellness Services</h3>
+                    <ul style="margin-bottom:0">
+                        <li><a href="#">Fitness Programs</a></li>
+                        <li><a href="#">Nutrition Counseling</a></li>
+                        <li><a href="#">Mental Health Support</a></li>
+                        <li><a href="#">Telehealth Services</a></li>
+                        <li><a href="#">Preventive Care</a></li>
+                        <li><a href="#">Senior Wellness</a></li>
+                        <li><a href="/health_calculator.php">Health Calculator</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" style="display: flex
+;
+    flex-direction: column;
+    justify-content: space-evenly;
+">
+                    <h3 style="text-align:center">Individual Wellness</h3>
+                    <!--                    <div style="padding: 28px 0;     display: flex-->
+                    <!--;-->
+                    <!--    justify-content: center;">-->
+                    <!--                        <i class="fas fa-user fa-2xl" style="font-size:50px; color:white; "></i>-->
+                    <!--                   </div>-->
+
+
+                    <ul style="margin-bottom:0">
+                        <li><a href="#">Wellness Plans</a></li>
+                        <li><a href="#">Mental Health Support</a></li>
+                        <li><a href="#">Preventive Care</a></li>
+                        <li><a href="#">Member Portal</a></li>
+                        <li><a href="#">Fitness Programs</a></li>
+                        <li><a href="#">Nutrition Counseling</a></li>
+                        <li><a href="#">Stress Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" style="display: flex
+;
+    flex-direction: column;
+    justify-content: space-evenly;
+">
+                    <h3 style="text-align:center">Corporate Wellness</h3>
+                    <ul style="margin-bottom:0">
+                        <li><a href="#">Employee Wellness Programs</a></li>
+                        <li><a href="#">Financial & Occupational Wellness</a></li>
+                        <li><a href="#">Corporate Fitness Solutions</a></li>
+                        <li><a href="#">EAP & Mental Wellness</a></li>
+                        <li><a href="#">Mental Health at Work</a></li>
+                        <li><a href="#">Wellness Workshops</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" style="display: flex
+;
+    flex-direction: column;
+    justify-content: space-evenly;
+">
+                    <h3 style="text-align:center">Company</h3>
+                    <ul style="margin-bottom:0">
+                        <li><a href="/synck_health_about.php">About Synck Health</a></li>
+                        <li><a href="#">Leadership Team</a></li>
+                        <li><a href="/synckhealth_careers.php">Careers</a></li>
+                        <li><a href="#">Press Center</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Community Impact</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-left">
+                        <p>&copy; 2025 Synck Health. All rights reserved.</p>
+                        <div class="certifications">
+                            <a href="/doctor_onboarding_form.php" style="text-decoration: none;"><span
+                                    class="cert-badge">🔒 Join as Doctor</span></a>
+                            <a href="/partnership_form.php" style="text-decoration: none;"><span class="cert-badge">✅
+                                    Become Our Partner</span></a>
+                            <a href="#" style="text-decoration: none;"><span class="cert-badge">Find a Doctor</span></a>
+                            <a href="#" style="text-decoration: none;"><span class="cert-badge">Employee
+                                    Corner</span></a>
+                            <a href="#" style="text-decoration: none;"><span class="cert-badge">Pharmacy
+                                    Locator</span></a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="/Privacy_Policy.php">Privacy Policy</a>
+                        <a href="/refund_policy.php">Refund Policy</a>
+                        <a href="/Terms-Conditions.php">Terms of Service</a>
+                        <a href="/synck_health_faq.php">FAQ</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Notice of Privacy Practices</a>
+                        <a href="#">State Disclosures</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-
+    <!-- Initialize Swiper -->
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                }
+            }
+        });
+    </script>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.logo-slider', {
-            loop: true,
-            speed: 7000,
-            slidesPerView: 5,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-            },
-            freeMode: true,
-            freeModeMomentum: false,
 
-            // breakpoints: {
-            //     960: {
-            //         slidesPerView: 5,
-            //         spaceBetween: 30
-            //     },
-            //     720: {
-            //         slidesPerView: 4,
-            //         spaceBetween: 30
-            //     },
-            //     540: {
-            //         slidesPerView: 2,
-            //         spaceBetween: 4
-            //     },
-            //     320: {
-            //         slidesPerView: 2,
-            //         spaceBetween: 2
-            //     },
-            // }
-        });
-    </script>
 </body>
 
 </html>
