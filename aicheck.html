@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynckHealth - Your AI-Powered Health Companion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="./assets/logo/logo.png" alt="Synck health" style="height: 45px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item mega-menu">
+                        <a class="nav-link dropdown-toggle " href="#" id="healthServicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Individual Wellness
+                        </a>
+                        <div class="dropdown-menu m-auto " aria-labelledby="healthServicesDropdown">
+                            <div class="container bas">
+                                <div class="row">
+                                    <div class="col-lg-3 mega-menu-column">
+                                        <h5 class="magamenutitle">Primary Care</h5>
+                                        <ul style="margin-bottom:0">
+                                            <li><a href="#">Fitness Programs</a></li>
+                                            <li><a href="#">Nutrition Counseling</a></li>
+                                            <li><a href="#">Mental Health Support</a></li>
+                                            <li><a href="#">Telehealth Services</a></li>
+                                            <li><a href="#">Preventive Care</a></li>
+                                            <li><a href="#">Senior Wellness</a></li>
+                                            <li><a href="#">Health Calculator</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 mega-menu-column">
+                                        <h5 class="magamenutitle">Specialty Services</h5>
+                                        <ul style="margin-bottom:0">
+                                            <li><a href="#">Wellness Plans</a></li>
+                                            <li><a href="#">Mental Health Support</a></li>
+                                            <li><a href="#">Preventive Care</a></li>
+                                            <li><a href="#">Member Portal</a></li>
+                                            <li><a href="#">Fitness Programs</a></li>
+                                            <li><a href="#">Nutrition Counseling</a></li>
+                                            <li><a href="#">Stress Management</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 mega-menu-column">
+                                        <h5 class="magamenutitle">Emergency Care</h5>
+                                        <ul style="margin-bottom:0">
+                                            <li><a href="#">Employee Wellness Programs</a></li>
+                                            <li><a href="#">Financial & Occupational Wellness</a></li>
+                                            <li><a href="#">Corporate Fitness Solutions</a></li>
+                                            <li><a href="#">EAP & Mental Wellness</a></li>
+                                            <li><a href="#">Mental Health at Work</a></li>
+                                            <li><a href="#">Wellness Workshops</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 mega-menu-column">
+                                        <div class="promo-banner">
+                                            <h5>New Patient Special</h5>
+                                            <p>Get 20% off your first visit when you book online!</p>
+                                            <button class="btn" style="font-size: 12px;">Book Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="./aicheck.html">AI Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-primary me-2" onclick="openForm('login')">Sign In</button>
+                    <button class="btn btn-primary" onclick="openForm('register')">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your AI-Powered Health Companion</h1>
+            <p>Experience the future of healthcare with our advanced AI tools for health assessment, consultations, and
+                personalized wellness recommendations. Available 24x7 in multiple languages.</p>
+
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary btn-large" onclick="openForm('health-checkup')">Start AI Health
+                    Check</a>
+                <a href="#" class="btn btn-outline btn-large" onclick="openForm('book-consultation')">Talk to Doctor
+                    Now</a>
+                <a href="#" class="btn btn-outline btn-large" onclick="toggleChatbot()">Try AI Assistant</a>
+            </div>
+
+            <div class="ai-tools-preview">
+                <div class="ai-tool-card" onclick="openForm('symptom-checker')">
+                    <div class="ai-tool-icon">🔍</div>
+                    <h3>AI Symptom Checker</h3>
+                    <p>Instant health triage & recommendations</p>
+                </div>
+                <div class="ai-tool-card" onclick="openForm('health-risk')">
+                    <div class="ai-tool-icon">📊</div>
+                    <h3>Risk Predictor</h3>
+                    <p>Personalized health risk assessment</p>
+                </div>
+                <div class="ai-tool-card" onclick="openForm('report-reader')">
+                    <div class="ai-tool-icon">📋</div>
+                    <h3>Report Reader</h3>
+                    <p>AI-powered medical report analysis</p>
+                </div>
+                <div class="ai-tool-card" onclick="openForm('lifestyle-plan')">
+                    <div class="ai-tool-icon">💪</div>
+                    <h3>Lifestyle Coach</h3>
+                    <p>Personalized diet & fitness plans</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Advanced AI Health Tools</h2>
+                <p>Leverage cutting-edge AI technology for comprehensive health management</p>
+            </div>
+
+            <div class="ai-tools-grid">
+                <!-- BMI Calculator Tool -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">⚖️</div>
+                        <div>
+                            <h3>BMI Calculator</h3>
+                            <div class="tool-subtitle">Body Mass Index Assessment</div>
+                        </div>
+                    </div>
+                    <p>Calculate your BMI and get AI-powered health recommendations based on your body composition.</p>
+                    <div class="calculator">
+                        <div class="calc-input">
+                            <label>Height:</label>
+                            <input type="number" id="height" placeholder="170" min="100" max="250">
+                            <span style="font-size: 10px;">cm</span>
+                        </div>
+                        <div class="calc-input">
+                            <label>Weight:</label>
+                            <input type="number" id="weight" placeholder="70" min="30" max="200">
+                            <span style="font-size: 10px;">kg</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateBMI()"
+                            style="width: 100%; margin-top: 8px;">Calculate BMI</button>
+                        <div id="bmi-result" class="calc-result" style="display: none;"></div>
+                    </div>
+                    <a href="#" class="btn btn-outline" onclick="openForm('detailed-assessment')"
+                        style="width: 100%;">Get Detailed Assessment</a>
+                </div>
+
+                <!-- Heart Rate Calculator -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">❤️</div>
+                        <div>
+                            <h3>Heart Rate Zone Calculator</h3>
+                            <div class="tool-subtitle">Target Heart Rate Analysis</div>
+                        </div>
+                    </div>
+                    <p>Calculate your optimal heart rate zones for different exercise intensities and health monitoring.
+                    </p>
+                    <div class="calculator">
+                        <div class="calc-input">
+                            <label>Age:</label>
+                            <input type="number" id="age-hr" placeholder="30" min="15" max="100">
+                            <span style="font-size: 10px;">years</span>
+                        </div>
+                        <div class="calc-input">
+                            <label>Fitness:</label>
+                            <select id="fitness-level">
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                                <option value="athlete">Athlete</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateHeartRate()"
+                            style="width: 100%; margin-top: 8px;">Calculate Zones</button>
+                        <div id="hr-result" class="calc-result" style="display: none;"></div>
+                    </div>
+                    <a href="#" class="btn btn-outline" onclick="openForm('heart-health-assessment')"
+                        style="width: 100%;">Book Heart Health Check</a>
+                </div>
+
+                <!-- Sleep Calculator -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">😴</div>
+                        <div>
+                            <h3>Sleep Cycle Calculator</h3>
+                            <div class="tool-subtitle">Optimal Sleep Timing</div>
+                        </div>
+                    </div>
+                    <p>Calculate the best bedtime and wake-up time based on sleep cycles for optimal rest and recovery.
+                    </p>
+                    <div class="calculator">
+                        <div class="calc-input">
+                            <label>Wake Time:</label>
+                            <input type="time" id="wake-time" value="07:00">
+                        </div>
+                        <div class="calc-input">
+                            <label>Sleep Goal:</label>
+                            <select id="sleep-hours">
+                                <option value="6">6 hours</option>
+                                <option value="7">7 hours</option>
+                                <option value="7.5" selected>7.5 hours</option>
+                                <option value="8">8 hours</option>
+                                <option value="9">9 hours</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateSleep()"
+                            style="width: 100%; margin-top: 8px;">Calculate Bedtime</button>
+                        <div id="sleep-result" class="calc-result" style="display: none;"></div>
+                    </div>
+                    <a href="#" class="btn btn-outline" onclick="openForm('sleep-analysis')" style="width: 100%;">Book
+                        Sleep Analysis</a>
+                </div>
+
+                <!-- Calorie Calculator -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">🔥</div>
+                        <div>
+                            <h3>Daily Calorie Calculator</h3>
+                            <div class="tool-subtitle">Metabolic Rate & Nutrition Planning</div>
+                        </div>
+                    </div>
+                    <p>Calculate your daily caloric needs based on your lifestyle and get personalized nutrition
+                        recommendations.</p>
+                    <div class="calculator">
+                        <div class="calc-input">
+                            <label>Gender:</label>
+                            <select id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="calc-input">
+                            <label>Age:</label>
+                            <input type="number" id="age-cal" placeholder="30" min="15" max="100">
+                        </div>
+                        <div class="calc-input">
+                            <label>Activity:</label>
+                            <select id="activity">
+                                <option value="1.2">Sedentary</option>
+                                <option value="1.375">Light Activity</option>
+                                <option value="1.55">Moderate Activity</option>
+                                <option value="1.725">Very Active</option>
+                                <option value="1.9">Extremely Active</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateCalories()"
+                            style="width: 100%; margin-top: 8px;">Calculate Needs</button>
+                        <div id="calorie-result" class="calc-result" style="display: none;"></div>
+                    </div>
+                    <a href="#" class="btn btn-outline" onclick="openForm('nutrition-plan')" style="width: 100%;">Get
+                        Nutrition Plan</a>
+                </div>
+
+                <!-- Water Intake Calculator -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">💧</div>
+                        <div>
+                            <h3>Hydration Calculator</h3>
+                            <div class="tool-subtitle">Daily Water Intake Optimization</div>
+                        </div>
+                    </div>
+                    <p>Calculate your optimal daily water intake based on your body weight, activity level, and climate.
+                    </p>
+                    <div class="calculator">
+                        <div class="calc-input">
+                            <label>Weight:</label>
+                            <input type="number" id="weight-water" placeholder="70" min="30" max="200">
+                            <span style="font-size: 10px;">kg</span>
+                        </div>
+                        <div class="calc-input">
+                            <label>Climate:</label>
+                            <select id="climate">
+                                <option value="normal">Normal</option>
+                                <option value="hot">Hot & Humid</option>
+                                <option value="dry">Hot & Dry</option>
+                                <option value="cold">Cold</option>
+                            </select>
+                        </div>
+                        <div class="calc-input">
+                            <label>Exercise:</label>
+                            <input type="number" id="exercise-mins" placeholder="30" min="0" max="300">
+                            <span style="font-size: 10px;">mins/day</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateWater()"
+                            style="width: 100%; margin-top: 8px;">Calculate Intake</button>
+                        <div id="water-result" class="calc-result" style="display: none;"></div>
+                    </div>
+                    <a href="#" class="btn btn-outline" onclick="openForm('hydration-tracker')" style="width: 100%;">Set
+                        Hydration Reminders</a>
+                </div>
+
+                <!-- Stress Level Assessment -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">🧘</div>
+                        <div>
+                            <h3>Stress Level Assessment</h3>
+                            <div class="tool-subtitle">Mental Health Quick Check</div>
+                        </div>
+                    </div>
+                    <p>Quick AI-powered stress assessment to understand your mental wellness and get personalized
+                        recommendations.</p>
+                    <div class="calculator">
+                        <div class="calc-input">
+                            <label>Sleep Quality:</label>
+                            <select id="sleep-quality">
+                                <option value="1">Very Poor</option>
+                                <option value="2">Poor</option>
+                                <option value="3">Fair</option>
+                                <option value="4">Good</option>
+                                <option value="5">Excellent</option>
+                            </select>
+                        </div>
+                        <div class="calc-input">
+                            <label>Work Stress:</label>
+                            <select id="work-stress">
+                                <option value="5">Very High</option>
+                                <option value="4">High</option>
+                                <option value="3">Moderate</option>
+                                <option value="2">Low</option>
+                                <option value="1">Very Low</option>
+                            </select>
+                        </div>
+                        <div class="calc-input">
+                            <label>Energy Level:</label>
+                            <select id="energy-level">
+                                <option value="1">Very Low</option>
+                                <option value="2">Low</option>
+                                <option value="3">Moderate</option>
+                                <option value="4">High</option>
+                                <option value="5">Very High</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateStress()"
+                            style="width: 100%; margin-top: 8px;">Assess Stress Level</button>
+                        <div id="stress-result" class="calc-result" style="display: none;"></div>
+                    </div>
+                    <a href="#" class="btn btn-outline" onclick="openForm('mental-health-consultation')"
+                        style="width: 100%;">Talk to Counselor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose SynckHealth AI?</h2>
+                <p>Advanced healthcare technology designed for better outcomes</p>
+            </div>
+
+            <div class="ai-tools-grid">
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">🤖</div>
+                        <div>
+                            <h3>Advanced AI Diagnostics</h3>
+                            <div class="tool-subtitle">95% Accuracy Rate</div>
+                        </div>
+                    </div>
+                    <p>Our AI models are trained on millions of medical cases to provide accurate health assessments and
+                        recommendations.</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">🌐</div>
+                        <div>
+                            <h3>Multilingual Support</h3>
+                            <div class="tool-subtitle">6+ Indian Languages</div>
+                        </div>
+                    </div>
+                    <p>Access healthcare in your preferred language with AI-powered translation and localized health
+                        content.</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">📱</div>
+                        <div>
+                            <h3>24x7 Availability</h3>
+                            <div class="tool-subtitle">Always Available</div>
+                        </div>
+                    </div>
+                    <p>Get instant health guidance anytime, anywhere with our AI-powered virtual health assistant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms Section -->
+    <!-- Symptom Checker Form -->
+    <div id="symptom-checker-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🔍 AI Symptom Checker</h3>
+                <button class="close-btn" onclick="closeForm('symptom-checker')">&times;</button>
+            </div>
+            <form id="symptom-form">
+                <div class="form-group">
+                    <label>Primary Symptoms *</label>
+                    <textarea placeholder="Describe your symptoms (e.g., headache, fever, cough)"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Symptom Duration</label>
+                    <select>
+                        <option>Less than 24 hours</option>
+                        <option>1-3 days</option>
+                        <option>4-7 days</option>
+                        <option>More than a week</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Severity Level</label>
+                    <select>
+                        <option>Mild</option>
+                        <option>Moderate</option>
+                        <option>Severe</option>
+                        <option>Very Severe</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Get AI Analysis</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Health Risk Predictor Form -->
+    <div id="health-risk-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>📊 Health Risk Predictor</h3>
+                <button class="close-btn" onclick="closeForm('health-risk')">&times;</button>
+            </div>
+            <form id="risk-form">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Age *</label>
+                    <input type="number" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Family Medical History</label>
+                    <textarea placeholder="Any diabetes, heart disease, cancer in family?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Lifestyle Factors</label>
+                    <select>
+                        <option>Very Active</option>
+                        <option>Moderately Active</option>
+                        <option>Sedentary</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Smoking/Drinking Habits</label>
+                    <select>
+                        <option>None</option>
+                        <option>Occasional</option>
+                        <option>Regular</option>
+                        <option>Heavy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Generate Risk Report</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Book Consultation Form -->
+    <div id="book-consultation-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>👨‍⚕️ Book Consultation</h3>
+                <button class="close-btn" onclick="closeForm('book-consultation')">&times;</button>
+            </div>
+            <form id="consultation-form">
+                <div class="form-group">
+                    <label>Patient Name *</label>
+                    <input type="text" placeholder="Enter patient name">
+                </div>
+                <div class="form-group">
+                    <label>Specialty Required *</label>
+                    <select>
+                        <option>General Physician</option>
+                        <option>Cardiologist</option>
+                        <option>Dermatologist</option>
+                        <option>Psychiatrist</option>
+                        <option>Gynecologist</option>
+                        <option>Pediatrician</option>
+                        <option>Orthopedic</option>
+                        <option>ENT Specialist</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Consultation Type *</label>
+                    <select>
+                        <option>Video Call</option>
+                        <option>Audio Call</option>
+                        <option>Chat Consultation</option>
+                        <option>Home Visit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <input type="time">
+                </div>
+                <div class="form-group">
+                    <label>Chief Complaint</label>
+                    <textarea placeholder="Brief description of your health concern"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🔐 Login to SynckHealth</h3>
+                <button class="close-btn" onclick="closeForm('login')">&times;</button>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Mobile Number / Email *</label>
+                    <input type="text" placeholder="Enter mobile number or email">
+                </div>
+                <div class="form-group">
+                    <label>Password *</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                <p style="text-align: center; margin-top: 10px; font-size: 10px;">
+                    <a href="#" style="color: var(--primary-blue);">Forgot Password?</a> |
+                    <a href="#" style="color: var(--primary-blue);"
+                        onclick="closeForm('login'); openForm('register');">Create Account</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>📝 Create Account</h3>
+                <button class="close-btn" onclick="closeForm('register')">&times;</button>
+            </div>
+            <form id="register-form">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Create Password *</label>
+                    <input type="password" placeholder="Create a strong password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+                <p style="text-align: center; margin-top: 10px; font-size: 10px;">
+                    Already have an account?
+                    <a href="#" style="color: var(--primary-blue);"
+                        onclick="closeForm('register'); openForm('login');">Login here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Corporate Demo Form -->
+    <div id="corporate-demo-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🏢 Request Corporate Demo</h3>
+                <button class="close-btn" onclick="closeForm('corporate-demo')">&times;</button>
+            </div>
+            <form id="corporate-form">
+                <div class="form-group">
+                    <label>Company Name *</label>
+                    <input type="text" placeholder="Enter your company name">
+                </div>
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Designation *</label>
+                    <input type="text" placeholder="Enter your job title">
+                </div>
+                <div class="form-group">
+                    <label>Number of Employees</label>
+                    <select>
+                        <option>1-50</option>
+                        <option>51-200</option>
+                        <option>201-500</option>
+                        <option>501-1000</option>
+                        <option>1000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Industry</label>
+                    <input type="text" placeholder="e.g., IT, Manufacturing, Healthcare">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label>Specific Requirements</label>
+                    <textarea placeholder="Tell us about your corporate wellness needs"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Request Demo</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Additional Forms -->
+    <div id="book-test-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🧪 Book Lab Test</h3>
+                <button class="close-btn" onclick="closeForm('book-test')">&times;</button>
+            </div>
+            <form id="test-form">
+                <div class="form-group">
+                    <label>Test Category *</label>
+                    <select>
+                        <option>Blood Tests</option>
+                        <option>Diabetes Screening</option>
+                        <option>Heart Health Package</option>
+                        <option>Complete Body Checkup</option>
+                        <option>X-Ray</option>
+                        <option>MRI Scan</option>
+                        <option>CT Scan</option>
+                        <option>Ultrasound</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Patient Name *</label>
+                    <input type="text" placeholder="Enter patient name">
+                </div>
+                <div class="form-group">
+                    <label>Collection Type *</label>
+                    <select>
+                        <option>Home Collection</option>
+                        <option>Visit Lab</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <input type="time">
+                </div>
+                <div class="form-group">
+                    <label>Address (for home collection)</label>
+                    <textarea placeholder="Enter complete address"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Book Test</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="./index.html">
+                        <img src="./assets/logo/logodrk.png" alt="logo" style="width: 150px;">
+                    </a>
+                    <p style="font-size: 10px; line-height: 1.4;">Your AI-powered health companion providing 24x7 healthcare services across India with multilingual support.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>AI Services</h4>
+                    <ul>
+                        <li><a href="#">Symptom Checker</a></li>
+                        <li><a href="#">Health Risk Predictor</a></li>
+                        <li><a href="#">Report Reader</a></li>
+                        <li><a href="#">Lifestyle Coach</a></li>
+                        <li><a href="#">AI Chatbot</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Healthcare</h4>
+                    <ul>
+                        <li><a href="#">Doctor Consultations</a></li>
+                        <li><a href="#">Lab Tests</a></li>
+                        <li><a href="#">Health Packages</a></li>
+                        <li><a href="#">Emergency Care</a></li>
+                        <li><a href="#">Home Healthcare</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Corporate</h4>
+                    <ul>
+                        <li><a href="#">Employee Wellness</a></li>
+                        <li><a href="#">Health Analytics</a></li>
+                        <li><a href="#">Bulk Health Checks</a></li>
+                        <li><a href="#">Wellness Programs</a></li>
+                        <li><a href="#">Request Demo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SynckHealth. All rights reserved. | GDPR Compliant | ISO 27001 Certified</p>
+            </div>
+        </div>
+    </footer>
+
+
+   
+  
+
+    <script src="./main.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
