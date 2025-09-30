@@ -230,6 +230,13 @@ body.menu-open {
 
 /* --------- hero --------- */
 
+.sdfghjk{
+    background-image: url(./assets/image/ChatGPT\ Image\ Sep\ 30\,\ 2025\,\ 06_13_11\ PM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
 .herosection {
     overflow: hidden;
 }
@@ -323,7 +330,22 @@ body.menu-open {
     background-image: url(./assets/image/section1c.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 24px;
+    /* box-shadow: 4px 4px 15px #00000029; */
+}
+
+.cardsection {
+    background-color: #91c8f04b;
     border-radius: 12px;
+    margin: 4px;
+    box-shadow: 4px 4px 15px #00000029;
+}
+
+.cardsection1 {
+    background-color: #ebff8b;
+    border-radius: 12px;
+    margin: 4px;
+     box-shadow: 4px 4px 15px #00000029;
 }
 
 .section1 img {
@@ -376,8 +398,8 @@ body.menu-open {
         font-size: 36px;
     }
 
-    .section1a h2{
-         font-size: 36px;
+    .section1a h2 {
+        font-size: 36px;
     }
 }
 
@@ -859,9 +881,11 @@ body.menu-open {
     }
 }
 
-.sectionfoter{
-    background-color: #ebe9ff;;
+.sectionfoter {
+    background-color: #ebe9ff;
+    ;
 }
+
 /* Footer */
 .footer {
     background: var(--text-dark);
@@ -912,124 +936,142 @@ body.menu-open {
 /* About2 */
 
 .about2-area .about2-inner-box .section-title {
-  margin-bottom: 45px;
+    margin-bottom: 45px;
 }
+
 .about2-area .about2-inner-box .section-subtitle {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
+
 .about2-tabs {
-  /* gap: 8px; */
-  border: none;
-  margin-bottom: 30px;
+    /* gap: 8px; */
+    border: none;
+    margin-bottom: 30px;
 }
+
 .about2-tabs .nav-item button {
-  border: none;
-  border-radius: 30px;
-  display: inline-flex;
-  align-items: center;
-  color: rgb(28 28 28 / 80%);
-  background: #ffffff;
-  gap: 15px;
-  padding: 8px 30px 8px 8px;
-  transition: 0.5s;
+    border: none;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(28 28 28 / 80%);
+    background: #ffffff;
+    gap: 15px;
+    padding: 8px 30px 8px 8px;
+    transition: 0.5s;
 }
+
 .about2-tabs .nav-item button .icon {
-  display: inline-flex;
-  background: rgb(19 81 216 / 10%);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
+    display: inline-flex;
+    background: rgb(19 81 216 / 10%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
+
 .about2-tabs .nav-item button .icon img {
-  width: 20px;
-  display: block;
+    width: 20px;
+    display: block;
 }
+
 .about2-tabs .nav-item button.active {
-  background: var(--primary-blue);
-  color: #ffffff !important;
-  font-weight: 400;
-  transition: 0s;
+    background: var(--primary-blue);
+    color: #ffffff !important;
+    font-weight: 400;
+    transition: 0s;
 }
+
 .about2-tabs .nav-item button.active .icon {
-  background: #ffffff;
-   color: #1351d8 !important;
+    background: #ffffff;
+    color: #1351d8 !important;
 }
+
 .about2-tab-content .about2-tab-content-body .img-box {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 24px;
-  max-width: 658px;
-  /* width: 100%; */
-  flex: none;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    max-width: 658px;
+    /* width: 100%; */
+    flex: none;
 }
+
 .about2-tab-content .about2-tab-content-body .img-box img {
-  border-radius: 10px;
-  height: 100%;
-  object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
 }
+
 .about2-tab-content .about2-tab-content-body .content-box {
-  background: #ffffff;
-  padding: 34px 24px;
-  border-radius: 10px;
+    background: #ffffff;
+    padding: 34px 24px;
+    border-radius: 10px;
 }
+
 .about2-tab-content .about2-tab-content-body .content-box .mac-btns-wrap {
-  padding: 0 6px;
+    padding: 0 6px;
 }
+
 .about2-tab-content .about2-tab-content-body .content-box h1 {
-  
-  font-size: 24px;
-  line-height: 1.1;
-  background: white;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 12px;
-  margin-bottom: 24px;
+
+    font-size: 24px;
+    line-height: 1.1;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 24px;
 }
+
 .about2-tab-content .about2-tab-content-body .content-box h1 .icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  color: #1351d8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #1351d8;
 }
+
 .about2-tab-content .about2-tab-content-body .content-box h1 .icon img {
-  width: 20px;
-  display: block;
+    width: 20px;
+    display: block;
 }
+
 .about2-tab-content .about2-tab-content-body .content-box .content {
-  /* background: var(--primary_light); */
-  border-radius: 10px;
-  /* padding: 30px 35px 35px 35px; */
-  margin-bottom: 30px;
+    /* background: var(--primary_light); */
+    border-radius: 10px;
+    /* padding: 30px 35px 35px 35px; */
+    margin-bottom: 30px;
 }
+
 .about2-tab-content .about2-tab-content-body .content-box .content p {
-  margin-bottom: 0;
-  line-height: 26px;
-  font-size: 18px;
-  color: rgb(0 0 0 / 75%);
-  font-weight: 300;
+    margin-bottom: 0;
+    line-height: 26px;
+    font-size: 18px;
+    color: rgb(0 0 0 / 75%);
+    font-weight: 300;
 }
-.about2-tab-content .about2-tab-content-body .content-box .content p + p {
-  margin-top: 20px;
+
+.about2-tab-content .about2-tab-content-body .content-box .content p+p {
+    margin-top: 20px;
 }
+
 .about2-tab-content .about2-tab-content-body .content-box .theme-btn {
-  display: block;
-  text-align: center;
-  padding: 0;
-  width: 53px;
-  height: 53px;
-  line-height: 56px;
-  margin-left: auto;
-  border-radius: 50%;
-  right: 10px;
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 53px;
+    height: 53px;
+    line-height: 56px;
+    margin-left: auto;
+    border-radius: 50%;
+    right: 10px;
 }
 
 
@@ -1044,11 +1086,13 @@ body.menu-open {
     .dropdown {
         display: block;
     }
-    .section1a h2{
-         font-size: 46px;
+
+    .section1a h2 {
+        font-size: 46px;
     }
-    .section1 h2{
-         font-size: 56px;
+
+    .section1 h2 {
+        font-size: 56px;
     }
 }
 
@@ -1059,5 +1103,5 @@ body.menu-open {
     .serviserw {
         max-width: 350px;
     }
-    
+
 }
