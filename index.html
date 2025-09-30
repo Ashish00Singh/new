@@ -44,25 +44,25 @@
                                     <div class="col-lg-3 mega-menu-column">
                                         <h5 class="magamenutitle">Primary Care</h5>
                                         <ul style="margin-bottom:0">
-                                            <li><a href="#">Fitness Programs</a></li>
-                                            <li><a href="#">Nutrition Counseling</a></li>
-                                            <li><a href="#">Mental Health Support</a></li>
-                                            <li><a href="#">Telehealth Services</a></li>
-                                            <li><a href="#">Preventive Care</a></li>
-                                            <li><a href="#">Senior Wellness</a></li>
-                                            <li><a href="#">Health Calculator</a></li>
+                                            <li><a href="./primaryCare.html">Fitness Programs</a></li>
+                                            <li><a href="./primaryCare.html#nutrition">Nutrition Counseling</a></li>
+                                            <li><a href="./primaryCare.html#Mental-Health-Support">Mental Health Support</a></li>
+                                            <li><a href="./primaryCare.html#telehealth-services">Telehealth Services</a></li>
+                                            <li><a href="./primaryCare.html#preventive-care">Preventive Care</a></li>
+                                            <li><a href="./primaryCare.html#senior-wellness">Senior Wellness</a></li>
+                                            <!-- <li><a href="./primaryCare.html">Health Calculator</a></li> -->
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 mega-menu-column">
                                         <h5 class="magamenutitle">Specialty Services</h5>
                                         <ul style="margin-bottom:0">
-                                            <li><a href="#">Wellness Plans</a></li>
-                                            <li><a href="#">Mental Health Support</a></li>
-                                            <li><a href="#">Preventive Care</a></li>
-                                            <li><a href="#">Member Portal</a></li>
-                                            <li><a href="#">Fitness Programs</a></li>
-                                            <li><a href="#">Nutrition Counseling</a></li>
-                                            <li><a href="#">Stress Management</a></li>
+                                            <li><a href="./Specialty.html">Wellness Plans</a></li>
+                                            <li><a href="./Specialty.html#Mental-Health-Support">Mental Health Support</a></li>
+                                            <li><a href="./Specialty.html#Preventive-Care">Preventive Care</a></li>
+                                            <li><a href="./Specialty.html#Member-Portal">Member Portal</a></li>
+                                            <li><a href="./Specialty.html#Fitness-Programs">Fitness Programs</a></li>
+                                            <li><a href="./Specialty.html#Nutrition-Counseling">Nutrition Counseling</a></li>
+                                            <li><a href="./Specialty.html#Stress-Management">Stress Management</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-3 mega-menu-column">
@@ -98,8 +98,8 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="btn btn-outline-primary me-2">Sign In</button>
-                    <button class="btn btn-primary">Book Now</button>
+                    <button class="btn btn-outline-primary me-2" onclick="openForm('login')">Sign In</button>
+                    <button class="btn btn-primary" onclick="openForm('register')">Get Started</button>
                 </div>
             </div>
         </div>
@@ -108,7 +108,6 @@
 
     <!-- hero section -->
     <section class="container">
-
         <div class="row my-5 herosection">
             <div class="ashish col-12 col-md-6 m-auto left">
                 <h1>
@@ -130,24 +129,12 @@
                 <img src="./assets/image/hero3.png" alt="">
             </div>
         </div>
-
     </section>
 
     <!-- Your Employeed are hurting -->
     <section class="container py-5">
         <h2 class="text-center fs-1 my-4">Your Employeed are hurting</h2>
         <div class="row p-2">
-            <div class="col-12 col-md-6">
-                <div class="row section1">
-                    <img class="col-6" src="./assets/image/section1a.png" alt="">
-                    <div class="col-6 m-auto">
-                        <h2 class="text-center">50%</h2>
-                        <p>
-                            of employees defer care due to cost
-                        </p>
-                    </div>
-                </div>
-            </div>
             <div class="mt-3 mt-md-0 col-12 col-md-6 d-flex flex-column gap-2">
                 <!-- <div class="d-flex flex-column" style="height: 100%;"> -->
                 <div class="section1a d-flex gap-4 p-2" style="height: 100%; width: 100%; min-height: 100px;">
@@ -158,21 +145,32 @@
                 </div>
                 <div class=" section1a d-flex gap-4 p-2" style="height: 100%; min-height: 100px;">
                     <h2 class="m-auto">67%</h2>
-                   
-                        <p class="m-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quaerat
-                            asperiores magnam,
-                            rerum fugit expedita?</p>
-                    
+
+                    <p class="m-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quaerat
+                        asperiores magnam,
+                        rerum fugit expedita?</p>
+
                     <!-- </div> -->
                 </div>
 
             </div>
-        </div>
 
+            <div class="col-12 col-md-6">
+                <div class="row section1">
+                    <div class="col-6 m-auto">
+                        <h2 class="text-center">50%</h2>
+                        <p>
+                            of employees defer care due to cost
+                        </p>
+                    </div>
+                    <img class="col-6" src="./assets/image/section1a.png" alt="">
+                </div>
+            </div>
+            
+        </div>
     </section>
 
     <!-- services -->
-
     <section class="awdawdasd py-5">
         <div class="container">
             <h2 class="py-3 fs-1 text-center">Services</h2>
@@ -244,9 +242,6 @@
 
 
     </section>
-
-
-
 
     <section class="container py-5">
 
@@ -474,11 +469,9 @@
         </div>
     </section>
 
-
-
     <!-- Wellness Plans for a Better Life -->
 
-    <section class="sectionfoter pt-3" >
+    <section class="sectionfoter pt-3">
         <div class="container">
             <div class="row">
 
@@ -503,8 +496,6 @@
             </div>
         </div>
     </section>
-
-
 
     <!-- Slider -->
 
@@ -560,10 +551,6 @@
 
     </section> -->
 
-
-
-
-
     <!-- hero section -->
     <section class="container">
 
@@ -591,25 +578,331 @@
 
     </section>
 
+    <!-- fetcher -->
+    <section class=" container about2-area" id="service">
 
-    <!-- footer heading -->
-    <section class=" sectionfoter py-3" >
-        <div class="container" >
-        <div class="row">
-            <div class="col text-center  ">
-                <img src="./assets/image/ChatGPT Image Sep 29, 2025, 05_52_46 PM.png" alt="" style="min-width: 450px; width: 100%;">
+        <div class="about2-inner-box">
+
+            <div class="about2-header">
+                <h5><span class="herodd">Fetcher</span></h5>
+                <h1 class="section-title">What should our company do for you</h1>
             </div>
-            <div class="col m-auto p-4">
 
-                <h1 >Protect your People with <br>
-                    <span class="herodd">Synck Healrth</span>
-                </h1>
-                <button class="btn btn-primary mt-2">Get started</button>
-                <p class="py-3" >Comprehensive family health plans designed to protect, support, and care for your loved ones always.</p>
+            <ul class="nav nav-tabs about2-tabs row" role="tablist">
+                <li class="nav-item col col-md-4 col-lg-2">
+                    <button class="nav-link active" id="business_strategy-tab" data-bs-toggle="tab"
+                        href="#business_strategy" role="tab" aria-controls="business_strategy" aria-selected="true">
+                        <span class="icon"><i class="fas fa-heartbeat"></i></span> Health Checks
+                    </button>
+                </li>
+                <li class="nav-item col col-md-4 col-lg-2">
+                    <button class="nav-link" id="market_analysis-tab" data-bs-toggle="tab" href="#market_analysis"
+                        role="tab" aria-controls="market_analysis" aria-selected="false">
+                        <span class="icon"><i class="fas fa-headset"></i></span> Telemedicine
+                    </button>
+                </li>
+                <li class="nav-item col col-md-4 col-lg-2">
+                    <button class="nav-link" id="process_optimization-tab" data-bs-toggle="tab"
+                        href="#process_optimization" role="tab" aria-controls="process_optimization"
+                        aria-selected="false">
+                        <span class="icon"><i class="fas fa-pills"></i></span> E-Pharmacy
+                    </button>
+                </li>
+                <li class="nav-item col col-md-4 col-lg-2">
+                    <button class="nav-link" id="performance_improvement-tab" data-bs-toggle="tab"
+                        href="#performance_improvement" role="tab" aria-controls="performance_improvement"
+                        aria-selected="false">
+                        <span class="icon"><i class="fas fa-cogs"></i></span> Other Benefits
+                    </button>
+                </li>
+                <li class="nav-item col col-md-4 col-lg-2">
+                    <button class="nav-link" id="entrepreneurial_guidance-tab" data-bs-toggle="tab"
+                        href="#entrepreneurial_guidance" role="tab" aria-controls="entrepreneurial_guidance"
+                        aria-selected="false">
+                        <span class="icon"><i class="fas fa-brain"></i></span> Mental Health
+                    </button>
+                </li>
+                <li class="nav-item col col-md-4 col-lg-2">
+                    <button class="nav-link" id="gym_fitness-tab" data-bs-toggle="tab" href="#gym_fitness" role="tab"
+                        aria-controls="gym_fitness" aria-selected="false">
+                        <span class="icon"><i class="fas fa-dumbbell"></i></span> Gyms &amp; Fitness
+                    </button>
+                </li>
+            </ul>
 
+
+            <div class="tab-content about2-tab-content">
+                <div class="tab-pane fade active show" id="business_strategy" role="tabpanel"
+                    aria-labelledby="business_strategy-tab">
+                    <div class="about2-tab-content-body row">
+                        <div class="img-box col col-md-6">
+                            <img src="./assets/image/fetcher/w1.png" alt="About" style="width: 100%;">
+                        </div>
+
+                        <div class="content-box card-h col col-md-6">
+                            <div class="mac-btns-wrap d-flex align-items-center justify-content-between">
+                                <div class="mac-buttons d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="action-btn d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <h1>
+                                <span class="icon"><i class="fas fa-heartbeat"></i></span>
+                                Health screenings for employees across India.
+                            </h1>
+                            <div class="content">
+                                <p>Health screenings help identify potential health issues early, enabling timely
+                                    intervention and care. Our services are designed to support employee wellness,
+                                    enhancing morale and overall organizational efficiency.</p>
+                                <p>Provide comprehensive health screenings tailored to employees' needs across
+                                    India, ensuring their well-being and promoting a healthier, more productive
+                                    workplace. </p>
+                            </div>
+                            <a href="#" class="theme-btn">
+                                <i class="iconoir-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="market_analysis" role="tabpanel" aria-labelledby="market_analysis-tab">
+                    <div class="about2-tab-content-body row">
+                        <div class="img-box col col-md-6">
+                            <img src="./assets/image/fetcher/w2.png" alt="About" style="width: 100%;">
+                        </div>
+
+                        <div class="content-box card-h col col-md-6">
+                            <div class="mac-btns-wrap d-flex align-items-center justify-content-between">
+                                <div class="mac-buttons d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="action-btn d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <h1>
+                                <span class="icon"><i class="fas fa-headset"></i></span> Consult doctors 24x7 on the
+                                synck platform.
+                            </h1>
+                            <div class="content">
+                                <p>With Synck's 24x7 telemedicine services, employees can consult doctors anytime,
+                                    anywhere. This convenient solution ensures quick access to medical advice,
+                                    eliminating long waits and supporting a wide range of health concerns.</p>
+                                <p>By offering round-the-clock medical support, Synck prioritizes employee
+                                    well-being and promotes a healthier, more productive workforce through timely
+                                    healthcare guidance.</p>
+                            </div>
+                            <a href="#" class="theme-btn">
+                                <i class="iconoir-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="process_optimization" role="tabpanel"
+                    aria-labelledby="process_optimization-tab">
+                    <div class="about2-tab-content-body row">
+                        <div class="img-box col col-md-6">
+                            <img src="./assets/image/fetcher/w3.png" alt="About" style="width: 100%;">
+                        </div>
+
+                        <div class="content-box card-h col col-md-6">
+                            <div class="mac-btns-wrap d-flex align-items-center justify-content-between">
+                                <div class="mac-buttons d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="action-btn d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <h1>
+                                <span class="icon"><i class="fas fa-pills"></i></span> Order medicines anytime on
+                                the synck platform.
+                            </h1>
+                            <div class="content">
+                                <p>Order medicines anytime with ease on the Synck platform. Enjoy quick access to a
+                                    wide range of medications, ensuring convenience and reliable healthcare support
+                                    at your fingertips.</p>
+                                <p>Synck simplifies the process of obtaining essential medicines, saving time and
+                                    effort for employees. With doorstep delivery and 24x7 availability, it ensures
+                                    seamless access to healthcare, fostering a healthier and stress-free lifestyle
+                                </p>
+                            </div>
+                            <a href="#" class="theme-btn">
+                                <i class="iconoir-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="performance_improvement" role="tabpanel"
+                    aria-labelledby="performance_improvement-tab">
+                    <div class="about2-tab-content-body row">
+                        <div class="img-box col col-md-6">
+                            <img src="./assets/image/fetcher/w4.png" alt="About" style="width: 100%;">
+                        </div>
+
+                        <div class="content-box card-h col col-md-6">
+                            <div class="mac-btns-wrap d-flex align-items-center justify-content-between">
+                                <div class="mac-buttons d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="action-btn d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <h1>
+                                <span class="icon"><i class="fas fa-cogs"></i></span> Additional perks and wellness
+                                services on synck platform.
+                            </h1>
+                            <div class="content">
+                                <p>Unlock additional perks and wellness services on the Synck platform, designed to
+                                    enhance the overall well-being of employees. From fitness programs to mental
+                                    health support, Synck offers a comprehensive suite of services to promote a
+                                    healthier lifestyle</p>
+                                <p>By providing easy access to various wellness resources, Synck helps organizations
+                                    create a positive work environment, ensuring employees stay motivated,
+                                    energized, and focused on their goals</p>
+                            </div>
+                            <a href="#" class="theme-btn">
+                                <i class="iconoir-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="entrepreneurial_guidance" role="tabpanel"
+                    aria-labelledby="entrepreneurial_guidance-tab">
+                    <div class="about2-tab-content-body row">
+                        <div class="img-box col col-md-6">
+                            <img src="./assets/image/fetcher/w5.png" alt="About" style="width: 100%;">
+                        </div>
+
+                        <div class="content-box card-h col col-md-6">
+                            <div class="mac-btns-wrap d-flex align-items-center justify-content-between">
+                                <div class="mac-buttons d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="action-btn d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <h1>
+                                <span class="icon"><i class="fas fa-brain"></i></span> Mental Health services.
+                            </h1>
+                            <div class="content">
+                                <p>Prioritize employee well-being with Synck’s mental health services. Offering
+                                    therapy sessions, stress management tools, and wellness programs to promote
+                                    mental wellness and resilience in the workplace.</p>
+                                <p>Support employees with mental health services that boost productivity, reduce
+                                    burnout, and foster a positive work environment. Synck’s mental health resources
+                                    are designed to be easily accessible and effective.</p>
+                            </div>
+                            <a href="#" class="theme-btn">
+                                <i class="iconoir-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="gym_fitness" role="tabpanel" aria-labelledby="gym_fitness-tab">
+                    <div class="about2-tab-content-body row">
+                        <div class="img-box col col-md-6">
+                            <img src="./assets/image/fetcher/w6.png" alt="About" style="width: 100%;">
+                        </div>
+
+                        <div class="content-box card-h col col-md-6">
+                            <div class="mac-btns-wrap d-flex align-items-center justify-content-between">
+                                <div class="mac-buttons d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="action-btn d-flex align-items-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <h1>
+                                <span class="icon"><i class="fas fa-dumbbell"></i></span> Fitness programs and gym
+                                services.
+                            </h1>
+                            <div class="content">
+                                <p>Encourage employees to maintain a healthy lifestyle with Synck’s fitness programs
+                                    and gym services. Offering personalized fitness plans and access to top-notch
+                                    gyms, Synck helps improve overall health and well-being.</p>
+                                <p>Provide employees with gym memberships and personalized workout routines that
+                                    boost morale, energy levels, and productivity while promoting a balanced
+                                    work-life lifestyle.</p>
+                            </div>
+                            <a href="#" class="theme-btn">
+                                <i class="iconoir-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
+
+    </section>
+
+
+    <!-- footer heading -->
+    <section class=" sectionfoter py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center  ">
+                    <img src="./assets/image/ChatGPT Image Sep 29, 2025, 05_52_46 PM.png" alt=""
+                        style="min-width: 250px; max-width: 350px; width: 100%;">
+                </div>
+                <div class="col m-auto p-4">
+
+                    <h1>Protect your People with <br>
+                        <span class="herodd">Synck Healrth</span>
+                    </h1>
+                    <button class="btn btn-primary mt-2">Get started</button>
+                    <p class="py-3">Comprehensive family health plans designed to protect, support, and care for your
+                        loved ones always.</p>
+
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -621,7 +914,8 @@
                     <a href="./index.html">
                         <img src="./assets/logo/logodrk.png" alt="logo" style="width: 150px;">
                     </a>
-                    <p class="mt-2" style="font-size: 10px; line-height: 1.4;">Your AI-powered health companion providing 24x7
+                    <p class="mt-2" style="font-size: 10px; line-height: 1.4;">Your AI-powered health companion
+                        providing 24x7
                         healthcare services across India with multilingual support.</p>
                 </div>
 
@@ -677,6 +971,335 @@
     </footer>
 
 
+
+    <!-- Forms Section -->
+    <!-- Symptom Checker Form -->
+    <div id="symptom-checker-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🔍 AI Symptom Checker</h3>
+                <button class="close-btn" onclick="closeForm('symptom-checker')">&times;</button>
+            </div>
+            <form id="symptom-form">
+                <div class="form-group">
+                    <label>Primary Symptoms *</label>
+                    <textarea placeholder="Describe your symptoms (e.g., headache, fever, cough)"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Symptom Duration</label>
+                    <select>
+                        <option>Less than 24 hours</option>
+                        <option>1-3 days</option>
+                        <option>4-7 days</option>
+                        <option>More than a week</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Severity Level</label>
+                    <select>
+                        <option>Mild</option>
+                        <option>Moderate</option>
+                        <option>Severe</option>
+                        <option>Very Severe</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Get AI Analysis</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Health Risk Predictor Form -->
+    <div id="health-risk-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>📊 Health Risk Predictor</h3>
+                <button class="close-btn" onclick="closeForm('health-risk')">&times;</button>
+            </div>
+            <form id="risk-form">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Age *</label>
+                    <input type="number" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Family Medical History</label>
+                    <textarea placeholder="Any diabetes, heart disease, cancer in family?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Lifestyle Factors</label>
+                    <select>
+                        <option>Very Active</option>
+                        <option>Moderately Active</option>
+                        <option>Sedentary</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Smoking/Drinking Habits</label>
+                    <select>
+                        <option>None</option>
+                        <option>Occasional</option>
+                        <option>Regular</option>
+                        <option>Heavy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Generate Risk Report</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Book Consultation Form -->
+    <div id="book-consultation-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>👨‍⚕️ Book Consultation</h3>
+                <button class="close-btn" onclick="closeForm('book-consultation')">&times;</button>
+            </div>
+            <form id="consultation-form">
+                <div class="form-group">
+                    <label>Patient Name *</label>
+                    <input type="text" placeholder="Enter patient name">
+                </div>
+                <div class="form-group">
+                    <label>Specialty Required *</label>
+                    <select>
+                        <option>General Physician</option>
+                        <option>Cardiologist</option>
+                        <option>Dermatologist</option>
+                        <option>Psychiatrist</option>
+                        <option>Gynecologist</option>
+                        <option>Pediatrician</option>
+                        <option>Orthopedic</option>
+                        <option>ENT Specialist</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Consultation Type *</label>
+                    <select>
+                        <option>Video Call</option>
+                        <option>Audio Call</option>
+                        <option>Chat Consultation</option>
+                        <option>Home Visit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <input type="time">
+                </div>
+                <div class="form-group">
+                    <label>Chief Complaint</label>
+                    <textarea placeholder="Brief description of your health concern"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🔐 Login to SynckHealth</h3>
+                <button class="close-btn" onclick="closeForm('login')">&times;</button>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Mobile Number / Email *</label>
+                    <input type="text" placeholder="Enter mobile number or email">
+                </div>
+                <div class="form-group">
+                    <label>Password *</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                <p style="text-align: center; margin-top: 10px; font-size: 10px;">
+                    <a href="#" style="color: var(--primary-blue);">Forgot Password?</a> |
+                    <a href="#" style="color: var(--primary-blue);"
+                        onclick="closeForm('login'); openForm('register');">Create Account</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>📝 Create Account</h3>
+                <button class="close-btn" onclick="closeForm('register')">&times;</button>
+            </div>
+            <form id="register-form">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Create Password *</label>
+                    <input type="password" placeholder="Create a strong password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+                <p style="text-align: center; margin-top: 10px; font-size: 10px;">
+                    Already have an account?
+                    <a href="#" style="color: var(--primary-blue);"
+                        onclick="closeForm('register'); openForm('login');">Login here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Corporate Demo Form -->
+    <div id="corporate-demo-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🏢 Request Corporate Demo</h3>
+                <button class="close-btn" onclick="closeForm('corporate-demo')">&times;</button>
+            </div>
+            <form id="corporate-form">
+                <div class="form-group">
+                    <label>Company Name *</label>
+                    <input type="text" placeholder="Enter your company name">
+                </div>
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Designation *</label>
+                    <input type="text" placeholder="Enter your job title">
+                </div>
+                <div class="form-group">
+                    <label>Number of Employees</label>
+                    <select>
+                        <option>1-50</option>
+                        <option>51-200</option>
+                        <option>201-500</option>
+                        <option>501-1000</option>
+                        <option>1000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Industry</label>
+                    <input type="text" placeholder="e.g., IT, Manufacturing, Healthcare">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label>Specific Requirements</label>
+                    <textarea placeholder="Tell us about your corporate wellness needs"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Request Demo</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Additional Forms -->
+    <div id="book-test-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🧪 Book Lab Test</h3>
+                <button class="close-btn" onclick="closeForm('book-test')">&times;</button>
+            </div>
+            <form id="test-form">
+                <div class="form-group">
+                    <label>Test Category *</label>
+                    <select>
+                        <option>Blood Tests</option>
+                        <option>Diabetes Screening</option>
+                        <option>Heart Health Package</option>
+                        <option>Complete Body Checkup</option>
+                        <option>X-Ray</option>
+                        <option>MRI Scan</option>
+                        <option>CT Scan</option>
+                        <option>Ultrasound</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Patient Name *</label>
+                    <input type="text" placeholder="Enter patient name">
+                </div>
+                <div class="form-group">
+                    <label>Collection Type *</label>
+                    <select>
+                        <option>Home Collection</option>
+                        <option>Visit Lab</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <input type="time">
+                </div>
+                <div class="form-group">
+                    <label>Address (for home collection)</label>
+                    <textarea placeholder="Enter complete address"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Book Test</button>
+            </form>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 

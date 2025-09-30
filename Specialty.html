@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialty Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo/logo.png" alt="Synck health" style="height: 45px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item mega-menu">
+                        <a class="nav-link dropdown-toggle active " href="#" id="healthServicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Individual Wellness
+                        </a>
+                        <div class="dropdown-menu m-auto " aria-labelledby="healthServicesDropdown">
+                            <div class="container bas">
+                                <div class="row">
+                                    <div class="col-lg-3 mega-menu-column">
+                                        <h5 class="magamenutitle">Primary Care</h5>
+                                        <ul style="margin-bottom:0">
+                                            <li><a href="./primaryCare.html">Fitness Programs</a></li>
+                                            <li><a href="./primaryCare.html#nutrition">Nutrition Counseling</a></li>
+                                            <li><a href="./primaryCare.html#Mental-Health-Support">Mental Health Support</a></li>
+                                            <li><a href="./primaryCare.html#telehealth-services">Telehealth Services</a></li>
+                                            <li><a href="./primaryCare.html#preventive-care">Preventive Care</a></li>
+                                            <li><a href="./primaryCare.html#senior-wellness">Senior Wellness</a></li>
+                                            <!-- <li><a href="./primaryCare.html">Health Calculator</a></li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 mega-menu-column">
+                                        <h5 class="magamenutitle">Specialty Services</h5>
+                                        <ul style="margin-bottom:0">
+                                            <li><a href="#">Wellness Plans</a></li>
+                                            <li><a href="#">Mental Health Support</a></li>
+                                            <li><a href="#">Preventive Care</a></li>
+                                            <li><a href="#">Member Portal</a></li>
+                                            <li><a href="#">Fitness Programs</a></li>
+                                            <li><a href="#">Nutrition Counseling</a></li>
+                                            <li><a href="#">Stress Management</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 mega-menu-column">
+                                        <h5 class="magamenutitle">Emergency Care</h5>
+                                        <ul style="margin-bottom:0">
+                                            <li><a href="#">Employee Wellness Programs</a></li>
+                                            <li><a href="#">Financial & Occupational Wellness</a></li>
+                                            <li><a href="#">Corporate Fitness Solutions</a></li>
+                                            <li><a href="#">EAP & Mental Wellness</a></li>
+                                            <li><a href="#">Mental Health at Work</a></li>
+                                            <li><a href="#">Wellness Workshops</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 mega-menu-column">
+                                        <div class="promo-banner">
+                                            <h5>New Patient Special</h5>
+                                            <p>Get 20% off your first visit when you book online!</p>
+                                            <button class="btn" style="font-size: 12px;">Book Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aicheck.html">AI Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-primary me-2" onclick="openForm('login')">Sign In</button>
+                    <button class="btn btn-primary" onclick="openForm('register')">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero secton -->
+
+    <section class="container text-center my-4 p-3">
+        <h1>Specialty Services</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore ex perspiciatis ipsam ullam minima officia
+            sint voluptatem quasi veritatis, accusantium dolor molestias incidunt dolorem eos.</p>
+    </section>
+
+    <!-- Wellness Plans -->
+    <section class=" py-3">
+        <div class="container">
+            <div class="row">
+
+                <div class="col m-auto p-4">
+                    <h5> <span class="herodd mb-5">Wellness Plans</span> </h5>
+                    <h2>Comprehensive Care for a Healthier You </h2>
+                    <p class="py-3"><span class="herodd" >neoHeath's</span> Wellness Plans bring together fitness, nutrition, mental health, and
+                        preventive care into one complete package. Designed to suit diverse lifestyles and goals, our
+                        plans provide personalized guidance and ongoing support, helping you stay balanced, energized,
+                        and in control of your overall well-being..</p>
+                    <ul>
+                        <li>🏋️ Personalized fitness and activity routines.</li>
+                        <li>🥗 Nutrition counseling and meal planning.</li>
+                        <li>🧠 Mental health and stress management support.</li>
+                        <li>🩺 Preventive care through check-ups and screenings.</li>
+                    </ul>
+                </div>
+
+                <div class="col text-center  ">
+                    <img src="./assets/image/spciality/img1.png" alt=""
+                        style="min-width: 250px; max-width: 500px; width: 100%;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Mental Health Support -->
+    <section class="container py-3" id="Mental-Health-Support">
+        <div class="row">
+            <div class="col text-center">
+                <img src="./assets/image/spciality/img2.png" alt=""
+                    style="min-width: 250px; max-width: 500px; width: 100%;">
+            </div>
+            <div class="col m-auto p-4">
+                <h5><span class="herodd mb-5">Mental Health Support</span></h5>
+                <h2>Stronger Minds for Healthier Living</h2>
+                <p class="py-3"><span class="herodd">neoHeath's</span> Mental Health Support programs provide
+                    professional guidance and resources to help you manage stress, anxiety, and emotional challenges.
+                    With a focus on resilience, balance, and personal growth, we ensure you have the right support to
+                    strengthen your mental and emotional well-being.</p>
+                <ul>
+                    <li>🧠 Personalized counseling and therapy sessions</li>
+                    <li>🌿 Stress reduction and mindfulness practices</li>
+                    <li>💬 Confidential support for emotional challenges</li>
+                    <li>🤝 Guidance for building long-term resilience</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preventive Care -->
+    <section class=" py-3" id="Preventive-Care">
+        <div class="container">
+            <div class="row">
+
+                <div class="col m-auto p-4">
+                    <h5> <span class="herodd mb-5">Preventive Care</span> </h5>
+                    <h2>Proactive Health Solutions by <span class="herodd">neoHeath</span>
+                    </h2>
+                    <p class="py-3">At <span class="herodd">neoHeath</span>, we believe prevention is the foundation of
+                        long-term wellness. Our
+                        preventive care programs focus on early detection, regular screenings, and personalized health
+                        assessments to help you identify risks before they become serious. With proactive support, we
+                        empower you to take control of your health and enjoy peace of mind for the future.</p>
+                    <ul>
+                        <li>🩺 Routine check-ups and diagnostic screenings.</li>
+                        <li>💉 Vaccinations to protect against common illnesses.</li>
+                        <li>📊 Personalized risk evaluations and guidance.</li>
+                        <li>🧾 Ongoing health monitoring and record management.</li>
+                    </ul>
+                </div>
+
+                <div class="col text-center  ">
+                    <img src="./assets/image/spciality/img3.png" alt=""
+                        style="min-width: 250px; max-width: 600px; width: 100%;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Portal -->
+    <section class="container py-3" id="Member-Portal">
+        <div class="row">
+            <div class="col text-center">
+                <img src="./assets/image/spciality/img4.png" alt=""
+                    style="min-width: 250px; max-width: 450px; width: 100%;">
+            </div>
+            <div class="col m-auto p-4">
+                <h5><span class="herodd mb-5">Member Portal</span></h5>
+                <h2>Your Personal Wellness Hub with <span class="herodd">neoHeath</span></h2>
+                <p class="py-3">The <span class="herodd">neoHeath</span> Member Portal gives you secure access to all
+                    your wellness resources in one
+                    place. From tracking your fitness progress and scheduling consultations to accessing nutrition plans
+                    and health records, the portal is designed to make managing your wellness journey simple,
+                    personalized, and convenient.</p>
+                <ul>
+                    <li>🔐 Secure login with 24/7 access to your profile</li>
+                    <li>📅 Easy scheduling for appointments and sessions</li>
+                    <li>📊 Progress tracking and personalized dashboards</li>
+                    <li>📁 Access to health records, reports, and plans anytime</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitness Programs -->
+    <section class=" py-3" id="pFitness-Programs">
+        <div class="container">
+            <div class="row">
+
+                <div class="col m-auto p-4">
+                    <h5> <span class="herodd mb-5">Fitness Programs</span> </h5>
+                    <h2>Personalized Training Solutions by <span class="herodd">neoHeath</span>
+                    </h2>
+                    <p class="py-3"><span class="herodd">neoHeath’s</span> Fitness Programs are designed to help you
+                        achieve your health goals with
+                        routines tailored to your lifestyle, preferences, and abilities. Whether it’s strength training,
+                        cardio, yoga, or flexibility exercises, our programs keep you motivated, build lasting habits,
+                        and support a balanced approach to physical well-being.
+                    </p>
+                    <ul>
+                        <li>🏋️ Customized strength and endurance workouts</li>
+                        <li>🧘 Yoga and flexibility sessions for body–mind balance.</li>
+                        <li>🚴 Cardio and functional routines to boost energy.</li>
+                        <li>📊 Progress tracking to measure and celebrate success.</li>
+                    </ul>
+                </div>
+
+                <div class="col text-center  ">
+                    <img src="./assets/image/spciality/img5.png" alt=""
+                        style="min-width: 250px; max-width: 500px; width: 100%;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Counseling -->
+    <section class="container py-3" id="Nutrition-Counseling">
+        <div class="row">
+            <div class="col text-center">
+                <img src="./assets/image/spciality/img6.png" alt=""
+                    style="min-width: 250px; max-width: 500px; width: 100%;">
+            </div>
+            <div class="col m-auto p-4">
+                <h5><span class="herodd mb-5">Senior Wellness</span></h5>
+                <h2>Healthy Eating Made Simple with <span class="herodd">neoHeath</span></h2>
+                <p class="py-3"><span class="herodd">neoHeath’s</span> Nutrition Counseling provides expert guidance to
+                    help you build sustainable
+                    eating habits that support energy, immunity, and long-term health. Our personalized approach ensures
+                    your diet aligns with your lifestyle and goals, making balanced nutrition both effective and
+                    enjoyable.
+                </p>
+                <ul>
+                    <li>🥗 Customized meal planning for your unique needs</li>
+                    <li>🍎 Guidance on healthy food choices and habits</li>
+                    <li>💧 Hydration and balanced diet recommendations</li>
+                    <li>📈 Ongoing support to track and refine progress</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stress Management -->
+    <section class=" py-3" id="Stress-Management">
+        <div class="container">
+            <div class="row">
+
+                <div class="col m-auto p-4">
+                    <h5> <span class="herodd mb-5">Stress Management</span> </h5>
+                    <h2>PFind Balance and Calm with <span class="herodd">neoHeath</span>
+                    </h2>
+                    <p class="py-3"><span class="herodd">neoHeath’s</span> Stress Management programs are designed to
+                        help you manage daily
+                        pressures and achieve a sense of calm. Through mindfulness practices, relaxation techniques, and
+                        personalized support, we empower you to reduce stress, improve focus, and enhance overall
+                        emotional well-being.
+                    </p>
+                    <ul>
+                        <li>🌿 Mindfulness and meditation sessions</li>
+                        <li>💬 One-on-one guidance for coping strategies</li>
+                        <li>🧘 Relaxation and breathing techniques</li>
+                        <li>📊 Tools to monitor and reduce stress levels.</li>
+                    </ul>
+                </div>
+
+                <div class="col text-center  ">
+                    <img src="./assets/image/spciality/img7.png" alt=""
+                        style="min-width: 250px; max-width: 500px; width: 100%;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer heading -->
+    <section class=" sectionfoter py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center  ">
+                    <img src="./assets/image/ChatGPT Image Sep 29, 2025, 05_52_46 PM.png" alt=""
+                        style="min-width: 250px; max-width: 350px; width: 100%;">
+                </div>
+                <div class="col m-auto p-4">
+
+                    <h1>Protect your People with <br>
+                        <span class="herodd">Synck Healrth</span>
+                    </h1>
+                    <button class="btn btn-primary mt-2">Get started</button>
+                    <p class="py-3">Comprehensive family health plans designed to protect, support, and care for your
+                        loved ones always.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="./index.html">
+                        <img src="./assets/logo/logodrk.png" alt="logo" style="width: 150px;">
+                    </a>
+                    <p class="mt-2" style="font-size: 10px; line-height: 1.4;">Your AI-powered health companion
+                        providing 24x7
+                        healthcare services across India with multilingual support.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>AI Services</h4>
+                    <ul>
+                        <li><a href="#">Symptom Checker</a></li>
+                        <li><a href="#">Health Risk Predictor</a></li>
+                        <li><a href="#">Report Reader</a></li>
+                        <li><a href="#">Lifestyle Coach</a></li>
+                        <li><a href="#">AI Chatbot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Healthcare</h4>
+                    <ul>
+                        <li><a href="#">Doctor Consultations</a></li>
+                        <li><a href="#">Lab Tests</a></li>
+                        <li><a href="#">Health Packages</a></li>
+                        <li><a href="#">Emergency Care</a></li>
+                        <li><a href="#">Home Healthcare</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Corporate</h4>
+                    <ul>
+                        <li><a href="#">Employee Wellness</a></li>
+                        <li><a href="#">Health Analytics</a></li>
+                        <li><a href="#">Bulk Health Checks</a></li>
+                        <li><a href="#">Wellness Programs</a></li>
+                        <li><a href="#">Request Demo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 SynckHealth. All rights reserved. | GDPR Compliant | ISO 27001 Certified</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Forms Section -->
+    <!-- Symptom Checker Form -->
+    <div id="symptom-checker-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🔍 AI Symptom Checker</h3>
+                <button class="close-btn" onclick="closeForm('symptom-checker')">&times;</button>
+            </div>
+            <form id="symptom-form">
+                <div class="form-group">
+                    <label>Primary Symptoms *</label>
+                    <textarea placeholder="Describe your symptoms (e.g., headache, fever, cough)"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Symptom Duration</label>
+                    <select>
+                        <option>Less than 24 hours</option>
+                        <option>1-3 days</option>
+                        <option>4-7 days</option>
+                        <option>More than a week</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Severity Level</label>
+                    <select>
+                        <option>Mild</option>
+                        <option>Moderate</option>
+                        <option>Severe</option>
+                        <option>Very Severe</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Get AI Analysis</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Health Risk Predictor Form -->
+    <div id="health-risk-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>📊 Health Risk Predictor</h3>
+                <button class="close-btn" onclick="closeForm('health-risk')">&times;</button>
+            </div>
+            <form id="risk-form">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Age *</label>
+                    <input type="number" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Family Medical History</label>
+                    <textarea placeholder="Any diabetes, heart disease, cancer in family?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Lifestyle Factors</label>
+                    <select>
+                        <option>Very Active</option>
+                        <option>Moderately Active</option>
+                        <option>Sedentary</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Smoking/Drinking Habits</label>
+                    <select>
+                        <option>None</option>
+                        <option>Occasional</option>
+                        <option>Regular</option>
+                        <option>Heavy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Generate Risk Report</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Book Consultation Form -->
+    <div id="book-consultation-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>👨‍⚕️ Book Consultation</h3>
+                <button class="close-btn" onclick="closeForm('book-consultation')">&times;</button>
+            </div>
+            <form id="consultation-form">
+                <div class="form-group">
+                    <label>Patient Name *</label>
+                    <input type="text" placeholder="Enter patient name">
+                </div>
+                <div class="form-group">
+                    <label>Specialty Required *</label>
+                    <select>
+                        <option>General Physician</option>
+                        <option>Cardiologist</option>
+                        <option>Dermatologist</option>
+                        <option>Psychiatrist</option>
+                        <option>Gynecologist</option>
+                        <option>Pediatrician</option>
+                        <option>Orthopedic</option>
+                        <option>ENT Specialist</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Consultation Type *</label>
+                    <select>
+                        <option>Video Call</option>
+                        <option>Audio Call</option>
+                        <option>Chat Consultation</option>
+                        <option>Home Visit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <input type="time">
+                </div>
+                <div class="form-group">
+                    <label>Chief Complaint</label>
+                    <textarea placeholder="Brief description of your health concern"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🔐 Login to SynckHealth</h3>
+                <button class="close-btn" onclick="closeForm('login')">&times;</button>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Mobile Number / Email *</label>
+                    <input type="text" placeholder="Enter mobile number or email">
+                </div>
+                <div class="form-group">
+                    <label>Password *</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                <p style="text-align: center; margin-top: 10px; font-size: 10px;">
+                    <a href="#" style="color: var(--primary-blue);">Forgot Password?</a> |
+                    <a href="#" style="color: var(--primary-blue);"
+                        onclick="closeForm('login'); openForm('register');">Create Account</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>📝 Create Account</h3>
+                <button class="close-btn" onclick="closeForm('register')">&times;</button>
+            </div>
+            <form id="register-form">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Create Password *</label>
+                    <input type="password" placeholder="Create a strong password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+                <p style="text-align: center; margin-top: 10px; font-size: 10px;">
+                    Already have an account?
+                    <a href="#" style="color: var(--primary-blue);"
+                        onclick="closeForm('register'); openForm('login');">Login here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Corporate Demo Form -->
+    <div id="corporate-demo-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🏢 Request Corporate Demo</h3>
+                <button class="close-btn" onclick="closeForm('corporate-demo')">&times;</button>
+            </div>
+            <form id="corporate-form">
+                <div class="form-group">
+                    <label>Company Name *</label>
+                    <input type="text" placeholder="Enter your company name">
+                </div>
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Designation *</label>
+                    <input type="text" placeholder="Enter your job title">
+                </div>
+                <div class="form-group">
+                    <label>Number of Employees</label>
+                    <select>
+                        <option>1-50</option>
+                        <option>51-200</option>
+                        <option>201-500</option>
+                        <option>501-1000</option>
+                        <option>1000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Industry</label>
+                    <input type="text" placeholder="e.g., IT, Manufacturing, Healthcare">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label>Specific Requirements</label>
+                    <textarea placeholder="Tell us about your corporate wellness needs"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Request Demo</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Additional Forms -->
+    <div id="book-test-modal" class="form-modal">
+        <div class="form-content">
+            <div class="form-header">
+                <h3>🧪 Book Lab Test</h3>
+                <button class="close-btn" onclick="closeForm('book-test')">&times;</button>
+            </div>
+            <form id="test-form">
+                <div class="form-group">
+                    <label>Test Category *</label>
+                    <select>
+                        <option>Blood Tests</option>
+                        <option>Diabetes Screening</option>
+                        <option>Heart Health Package</option>
+                        <option>Complete Body Checkup</option>
+                        <option>X-Ray</option>
+                        <option>MRI Scan</option>
+                        <option>CT Scan</option>
+                        <option>Ultrasound</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Patient Name *</label>
+                    <input type="text" placeholder="Enter patient name">
+                </div>
+                <div class="form-group">
+                    <label>Collection Type *</label>
+                    <select>
+                        <option>Home Collection</option>
+                        <option>Visit Lab</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <input type="time">
+                </div>
+                <div class="form-group">
+                    <label>Address (for home collection)</label>
+                    <textarea placeholder="Enter complete address"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="Enter your mobile number">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Book Test</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
