@@ -55,6 +55,7 @@ body {
 
 body {
     background-color: white;
+        overflow-x: hidden;
 }
 
 .navbar {
