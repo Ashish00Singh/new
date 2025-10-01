@@ -3,10 +3,22 @@
 body {
     background-color: #c0cef449;
     font-family: "Poppins", sans-serif;
+    position: relative;
+    z-index: 2;
 }
 
+  .iconback {
+      position: absolute;
+      width: 40px;   
+      height: 40px;
+      pointer-events: none;
+      opacity: .2;
+      z-index: 1;
+    }
 .container {
     max-width: 1500px;
+    position: relative;
+    z-index: 2;
 }
 
 :root {
@@ -52,14 +64,11 @@ body {
 
 .navbar-collapse {
     max-height: 100vh;
-    /* limit height to screen */
     overflow-y: auto;
-    /* allow scroll only inside the menu */
 }
 
 body.menu-open {
     overflow: hidden;
-    /* lock background scroll */
 }
 
 .navbar-brand {
@@ -348,6 +357,7 @@ body.menu-open {
      box-shadow: 4px 4px 15px #00000029;
 }
 
+
 .section1 img {
     max-width: 300px;
 }
@@ -471,7 +481,7 @@ body.menu-open {
 
 .swiper-slide {
     /* text-align: center; */
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -515,17 +525,7 @@ body.menu-open {
 }
 
 
-
-.bas {
-    background-image: url(./assets//image/flower.png);
-    background-repeat: repeat-x;
-    background-position-y: bottom;
-    background-size: 18% 36px;
-}
-
 /* FOOTER */
-
-
 .footer {
     backdrop-filter: blur(20px);
     position: relative;
@@ -536,31 +536,9 @@ body.menu-open {
 .footer-section>ul {
     padding: 0;
 }
-
-
-
-
-@keyframes text-shimmer {
-
-    0%,
-    100% {
-        filter: brightness(1);
-    }
-
-    50% {
-        filter: brightness(1.3);
-    }
-}
-
-
-
 .dropdown {
     display: none;
 }
-
-
-
-
 
 .btn-primary {
     background: var(--primary-blue);
@@ -590,14 +568,12 @@ body.menu-open {
 }
 
 .hero h1 {
-    /* font-size: 32px; */
     font-weight: 700;
     margin-bottom: 12px;
     color: var(--text-dark);
 }
 
 .hero p {
-    /* font-size: 14px; */
     color: var(--text-light);
     margin-bottom: 25px;
     max-width: 600px;
@@ -614,7 +590,6 @@ body.menu-open {
 
 .btn-large {
     padding: 10px 20px;
-    /* font-size: 12px; */
 }
 
 .ai-tools-preview {
@@ -901,8 +876,8 @@ body.menu-open {
 }
 
 .footer-section h4 {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 

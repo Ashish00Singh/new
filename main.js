@@ -1,4 +1,55 @@
 
+ const icons = [
+    "assets/icons/icon.png",
+    "assets/icons/icon1.png",
+    "assets/icons/icon2.png",
+    "assets/icons/icon3.png",
+    "assets/icons/icon4.png"
+  ];
+
+  const body = document.body;
+  const width = window.innerWidth;
+  const height = body.clientHeight;
+
+  console.log(body.clientHeight)
+
+  const placed = [];
+  const iconSize = 50; // spacing between icons
+
+  function isOverlapping(x, y) {
+    for (let pos of placed) {
+      let dx = pos.x - x;
+      let dy = pos.y - y;
+      let distance = Math.sqrt(dx * dx + dy * dy);
+      if (distance < iconSize) return true;
+    }
+    return false;
+  }
+
+  function placeIcons(count) {
+    let attempts = 0;
+    while (placed.length < count && attempts < count * 20) {
+      const x = Math.random() * (width - iconSize);
+      const y = Math.random() * (height - iconSize);
+
+      if (!isOverlapping(x, y)) {
+        const img = document.createElement("img");
+        img.src = icons[Math.floor(Math.random() * icons.length)];
+        img.classList.add("iconback");
+        img.style.left = `${x}px`;
+        img.style.top = `${y}px`;
+        body.appendChild(img);
+        placed.push({ x, y });
+      }
+      attempts++;
+    }
+  }
+
+  // scatter 60 icons across background
+  placeIcons(600);
+
+
+
 const navbarCollapse = document.querySelector('.navbar-collapse');
 
 navbarCollapse.addEventListener('show.bs.collapse', () => {
