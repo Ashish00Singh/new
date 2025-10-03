@@ -6,6 +6,12 @@ body {
     position: relative;
     z-index: 2;
 }
+#bodys{
+position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+}
 
   .iconback {
       position: absolute;
@@ -267,6 +273,29 @@ body.menu-open {
     background-clip: text;
 }
 
+
+.lefttop{
+     transform: translate(-50%, -50%);
+}
+
+.righttop{
+     transform: translate(50%, -50%);
+}
+
+.leftbottom{
+     transform: translate(-50%, 50%);
+}
+.rightbottom{
+     transform: translate(50%, 50%);
+}
+.showq.rightbottom, .showq.leftbottom, .showq.righttop, .showq.lefttop{
+     opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+
+
 .left {
     transform: translateX(-50%);
 }
@@ -277,7 +306,7 @@ body.menu-open {
 
 .heroimg img {
     overflow: hidden;
-    width: 70%;
+    width: 100%;
 }
 
 .ashish {
@@ -296,7 +325,49 @@ body.menu-open {
 }
 
 
-.logo-slider-wrapper {
+
+
+
+
+
+
+
+
+
+
+.logo-slider1 {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-slider1:hover .logos-slide1 {
+    /* animation-play-state: paused; */
+}
+
+.logos-slide1 {
+    display: inline-block;
+    animation: 45s slide infinite linear;
+}
+
+.logos-slide1 img {
+    width: 183px;
+    margin: 0 40px;
+    background-color: white;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* .logo-slider-wrapper {
     height: 150px;
 }
 
@@ -316,7 +387,7 @@ body.menu-open {
     align-items: center;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
-}
+} */
 
 
 
@@ -434,6 +505,18 @@ body.menu-open {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
+    /* opacity: 0; */
+    transition: all 0.5s ease;
+    
+    
+}
+.srink{
+     transform: scale(0.5);
+}
+.showq.srink {
+     opacity: 1;
+     transform: scale(1);
 }
 
 .flotinglogo img {
@@ -445,6 +528,8 @@ body.menu-open {
     padding: 5px;
     width: 100px;
     height: 100px;
+    /* opacity: 0; */
+    transition: all 0.5s ease;
 }
 
 
@@ -789,7 +874,7 @@ body.menu-open {
 .form-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 15px;
 }
 
@@ -801,7 +886,7 @@ body.menu-open {
 .close-btn {
     background: none;
     border: none;
-    /* font-size: 18px; */
+    font-size: 24px;
     cursor: pointer;
     color: var(--text-light);
 }
@@ -891,13 +976,18 @@ body.menu-open {
 }
 
 .footer-section a {
-    color: #9ca3af;
+    color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section a:hover {
-    color: white;
+   background: linear-gradient(135deg, #9757d9 0%, #fe8f69 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+
 }
 
 .footer-bottom {
